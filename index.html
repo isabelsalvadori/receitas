@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lívia Valença — Receitas Proteicas que Você Realmente Quer Comer</title>
+<meta name="description" content="35 receitas proteicas com sabor real. Sem sofrimento, sem ingredientes impossíveis, sem gosto de papelão. Por Lívia Valença.">
+<meta name="author" content="Lívia Valença">
+<meta property="og:title" content="Lívia Valença — Receitas Proteicas">
+<meta property="og:description" content="Comida boa que, por acaso, também entrega macronutrientes melhores.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   LÍVIA VALENÇA — E-BOOK INTERATIVO
+   "Comida que você realmente quer comer"
+   ============================================================ */
+
+:root{
+  --cor-primaria: #C8A882;
+  --cor-secundaria: #4A5C3F;
+  --cor-destaque: #C4623A;
+  --cor-texto: #1C1A18;
+  --cor-fundo: #FAF7F2;
+  --cor-superficie: #F0EAE0;
+  --cor-branco: #FFFFFF;
+  --cor-borda: #E5DDD3;
+  --sombra: 0 8px 28px rgba(28,26,24,0.11);
+  --sombra-hover: 0 18px 40px rgba(28,26,24,0.18);
+  --raio: 14px;
+  --raio-lg: 22px;
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-corpo: 'Inter', sans-serif;
+  --fonte-mono: 'DM Mono', monospace;
+}
+
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+body{
+  font-family:var(--fonte-corpo);
+  font-weight:400;
+  background:var(--cor-fundo);
+  color:var(--cor-texto);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+ul{ list-style:none; }
+h1,h2,h3,h4{ font-family:var(--fonte-titulo); line-height:1.15; font-weight:600; }
+.mono{ font-family:var(--fonte-mono); }
+.container{ max-width:1180px; margin:0 auto; padding:0 24px; }
+section{ scroll-margin-top:84px; }
+.secao-head{ text-align:center; max-width:640px; margin:0 auto 44px; }
+.secao-head .eyebrow{ font-family:var(--fonte-mono); font-weight:600; text-transform:uppercase; letter-spacing:.18em; font-size:11px; color:var(--cor-destaque); display:block; margin-bottom:10px; }
+.secao-head h2{ font-size:clamp(30px,4.5vw,46px); font-weight:700; margin-bottom:14px; }
+.secao-head p{ color:#3a352e; font-size:16px; font-weight:400; }
+.secao-head.com-linha::before{ content:''; display:block; width:48px; height:4px; background:var(--cor-destaque); margin:0 auto 16px; border-radius:2px; }
+
+/* ---------- textura de fundo ---------- */
+.textura-pontos{
+  background-image: radial-gradient(rgba(28,26,24,0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  min-height:48px; padding:14px 36px; border-radius:999px; color:#FFFFFF;
+  font-weight:700; font-size:15px; letter-spacing:.02em; transition:transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+  white-space:nowrap;
+}
+.btn-primary{ background:var(--cor-destaque); color:#FFFFFF; box-shadow:var(--sombra); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:var(--sombra-hover); opacity:.94; }
+.btn-secondary{ background:var(--cor-secundaria); color:#FFFFFF; border:1.5px solid var(--cor-secundaria); box-shadow:var(--sombra); }
+.btn-secondary:hover{ transform:translateY(-2px); box-shadow:var(--sombra-hover); opacity:.94; }
+.btn-full{ width:100%; }
+.btn-outline-destaque{ background:var(--cor-destaque); color:#FFFFFF; border:none; box-shadow:var(--sombra); }
+.btn-outline-destaque:hover{ transform:translateY(-2px); box-shadow:var(--sombra-hover); opacity:.94; }
+
+/* ---------- NAV ---------- */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  background:rgba(250,247,242,0.88); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--cor-borda);
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; height:72px; }
+.nav-logo{ font-family:var(--fonte-titulo); font-size:24px; font-weight:700; letter-spacing:.02em; }
+.nav-links{ display:flex; gap:30px; align-items:center; }
+.nav-links a{ font-size:14.5px; font-weight:500; color:var(--cor-texto); position:relative; padding:6px 0; }
+.nav-links a::after{ content:''; position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--cor-primaria); transition:width .25s ease; }
+.nav-links a:hover::after{ width:100%; }
+.nav-cta{ background:var(--cor-secundaria); color:#FFFFFF !important; padding:14px 32px !important; min-height:52px; display:inline-flex; align-items:center; border-radius:999px; font-size:13.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; line-height:1; }
+.hamburger{ display:none; flex-direction:column; gap:5px; width:48px; height:48px; align-items:center; justify-content:center; }
+.hamburger span{ width:24px; height:2px; background:var(--cor-texto); transition:.3s; }
+.hamburger.aberto span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.hamburger.aberto span:nth-child(2){ opacity:0; }
+.hamburger.aberto span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+/* ---------- HERO ---------- */
+.hero{
+  padding:150px 0 90px; position:relative;
+  background:var(--cor-fundo);
+}
+.hero-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:50px; align-items:center; }
+.hero-tag{ font-family:var(--fonte-mono); font-weight:700; text-transform:uppercase; letter-spacing:.14em; font-size:12px; color:var(--cor-destaque); margin-bottom:18px; display:inline-block; }
+.hero h1{ font-size:clamp(52px,6vw,68px); font-weight:700; margin-bottom:16px; }
+.hero .subtitulo{ font-weight:500; font-size:clamp(18px,2.4vw,22px); color:#3a352e; margin-bottom:10px; }
+.hero .tagline{ color:#46413a; font-weight:400; font-size:16px; margin-bottom:32px; max-width:480px; }
+.hero-ctas{ display:flex; gap:16px; flex-wrap:wrap; }
+.hero-foto{ position:relative; border-radius:var(--raio-lg); overflow:hidden; aspect-ratio:4/5; box-shadow:var(--sombra-hover); border:3px solid var(--cor-primaria); background:linear-gradient(145deg, var(--cor-primaria), var(--cor-superficie)); }
+.hero-foto img{ width:100%; height:100%; object-fit:cover; }
+.avatar-fallback{
+  width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px;
+  background:linear-gradient(145deg, var(--cor-primaria), #ddb98e); color:#3a2f22;
+}
+.avatar-fallback .monograma{ font-family:var(--fonte-titulo); font-size:64px; font-weight:700; }
+.avatar-fallback span.legenda{ font-family:var(--fonte-mono); font-size:12px; letter-spacing:.08em; }
+.badges-flutuantes{ display:flex; gap:12px; flex-wrap:wrap; margin-top:36px; }
+.badge-flutuante{
+  background:var(--cor-branco); border:1px solid var(--cor-borda); border-radius:999px; padding:12px 24px;
+  font-family:var(--fonte-mono); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.08em; box-shadow:var(--sombra); animation:flutuar 4s ease-in-out infinite;
+}
+.badge-flutuante:nth-child(2){ animation-delay:.6s; }
+.badge-flutuante:nth-child(3){ animation-delay:1.2s; }
+@keyframes flutuar{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-8px);} }
+.scroll-hint{
+  position:absolute; bottom:32px; left:50%; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:8px; cursor:pointer;
+}
+.scroll-hint span{
+  font-family:var(--fonte-mono); font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.14em; color:var(--cor-destaque);
+}
+.scroll-arrow{
+  width:20px; height:20px; border-right:2px solid var(--cor-destaque); border-bottom:2px solid var(--cor-destaque);
+  transform:rotate(45deg); animation:scrollBounce 1.6s ease-in-out infinite;
+}
+@keyframes scrollBounce{
+  0%,100%{ transform:rotate(45deg) translateY(0); opacity:1; }
+  50%{ transform:rotate(45deg) translateY(6px); opacity:.4; }
+}
+
+/* ---------- SOBRE ---------- */
+.sobre{ padding:72px 0; background:var(--cor-superficie); border-top:1px solid var(--cor-borda); border-bottom:1px solid var(--cor-borda); }
+.sobre-texto{ max-width:560px; margin:0 auto 56px; text-align:center; }
+.sobre-texto blockquote{ font-family:var(--fonte-titulo); font-style:italic; font-weight:600; font-size:clamp(24px,3vw,30px); line-height:1.4; color:var(--cor-texto); }
+.sobre-texto .assinatura{ margin-top:18px; font-family:var(--fonte-mono); font-weight:600; letter-spacing:.1em; font-size:13px; color:var(--cor-destaque); }
+.pilares{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.pilar{ background:var(--cor-branco); border:1px solid var(--cor-borda); border-radius:var(--raio); padding:32px 24px; text-align:center; box-shadow:var(--sombra); }
+.pilar .icone{ margin-bottom:14px; display:flex; align-items:center; justify-content:center; }
+.pilar .icone svg{ width:34px; height:34px; stroke:var(--cor-destaque); }
+.pilar h3{ font-size:19px; font-weight:700; margin-bottom:8px; }
+.pilar p{ font-size:16px; font-weight:400; color:#3a352e; }
+
+/* ---------- COMO USAR ---------- */
+.como-usar{ padding:90px 0; }
+.passos{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+.passo{ background:var(--cor-branco); border:1px solid var(--cor-borda); border-radius:var(--raio); padding:28px 22px; }
+.passo .num{ font-family:var(--fonte-mono); color:var(--cor-destaque); font-weight:600; letter-spacing:.08em; font-size:13px; margin-bottom:10px; display:block; }
+.passo h3{ font-size:17px; font-weight:700; margin-bottom:8px; display:flex; align-items:center; gap:9px; }
+.passo h3 svg{ width:19px; height:19px; stroke:var(--cor-destaque); flex-shrink:0; }
+.passo p{ font-size:16px; font-weight:400; color:#3a352e; }
+
+/* ---------- FERRAMENTAS ---------- */
+.ferramentas{ padding:90px 0; background:var(--cor-superficie); border-top:1px solid var(--cor-borda); }
+.ferramenta-bloco{ background:var(--cor-branco); border:1px solid var(--cor-borda); border-left:4px solid var(--cor-destaque); border-radius:var(--raio-lg); padding:42px; margin-bottom:28px; box-shadow:var(--sombra); }
+.ferramenta-titulo{ display:flex; align-items:center; gap:16px; margin-bottom:24px; }
+.ferramenta-titulo .emoji{ width:46px; height:46px; min-width:46px; border-radius:50%; background:var(--cor-superficie); display:flex; align-items:center; justify-content:center; }
+.ferramenta-titulo .emoji svg{ width:22px; height:22px; stroke:var(--cor-destaque); }
+.ferramenta-titulo h3{ font-size:22px; font-weight:700; }
+.ferramenta-titulo p{ font-size:16px; font-weight:400; color:#46413a; margin-top:2px; }
+.filtro-grupo{ margin-bottom:20px; }
+.filtro-grupo-label{ font-family:var(--fonte-mono); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:#55504a; margin-bottom:10px; display:block; }
+.pill-row{ display:flex; gap:10px; flex-wrap:wrap; }
+.pill{
+  min-height:48px; padding:0 20px; border-radius:999px; border:1.5px solid var(--cor-borda);
+  background:var(--cor-branco); font-size:13.5px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; transition:.2s;
+}
+.pill:hover{ border-color:var(--cor-destaque); }
+.pill.ativo{ background:var(--cor-destaque); border-color:var(--cor-destaque); color:#fff; font-weight:700; }
+.resultado-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:20px; margin-top:24px; }
+.msg-vazia{ text-align:center; padding:40px 20px; color:#55504a; font-style:italic; font-weight:500; font-family:var(--fonte-titulo); font-size:18px; }
+.fade-in{ animation:fadeIn .35s ease both; }
+@keyframes fadeIn{ from{ opacity:0; transform:translateY(8px);} to{ opacity:1; transform:translateY(0);} }
+
+.busca-ingrediente{ position:relative; margin-bottom:20px; }
+.busca-ingrediente input{
+  width:100%; min-height:48px; border:1.5px solid var(--cor-borda); border-radius:999px; padding:0 22px;
+  font-size:15px; font-family:var(--fonte-corpo); background:var(--cor-fundo);
+}
+.busca-ingrediente input:focus{ outline:none; border-color:var(--cor-destaque); }
+.card-substituicao{ background:var(--cor-fundo); border:1px solid var(--cor-borda); border-radius:var(--raio); padding:24px; margin-top:16px; }
+.card-substituicao .linha-troca{ display:flex; align-items:center; gap:14px; font-family:var(--fonte-mono); font-weight:500; font-size:15px; margin-bottom:10px; flex-wrap:wrap; }
+.card-substituicao .linha-troca .de{ text-decoration:line-through; color:#8a8275; }
+.card-substituicao .linha-troca .seta{ color:var(--cor-destaque); }
+.card-substituicao .linha-troca .para{ color:var(--cor-secundaria); font-weight:700; }
+.card-substituicao .impacto{ font-size:16px; font-weight:400; color:#3a352e; margin-bottom:12px; }
+.card-substituicao .usado-em{ font-size:14px; font-weight:500; color:#55504a; }
+.card-substituicao .usado-em b{ color:var(--cor-texto); font-weight:700; }
+
+.grid-geladeira{ display:grid; gap:22px; margin-bottom:24px; }
+.geladeira-categoria h4{ font-family:var(--fonte-mono); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:#55504a; margin-bottom:10px; }
+.geladeira-itens{ display:flex; flex-wrap:wrap; gap:10px; }
+.item-geladeira{
+  min-height:48px; padding:0 16px; border-radius:var(--raio); border:1.5px solid var(--cor-borda); background:var(--cor-fundo);
+  font-size:14px; font-weight:500; display:flex; align-items:center; gap:8px; transition:.2s;
+}
+.item-geladeira .check{ width:16px; height:16px; border-radius:4px; border:1.5px solid #8a8275; display:inline-flex; align-items:center; justify-content:center; font-size:11px; transition:.2s; }
+.item-geladeira.marcado{ background:var(--cor-secundaria); border-color:var(--cor-secundaria); color:#fff; font-weight:700; }
+.item-geladeira.marcado .check{ background:#fff; border-color:#fff; color:var(--cor-secundaria); }
+.resultado-geladeira{ margin-top:10px; }
+.resultado-geladeira h4{ font-size:15px; font-weight:700; margin:18px 0 12px; font-family:var(--fonte-mono); text-transform:uppercase; letter-spacing:.1em; color:var(--cor-secundaria); }
+.badge-status{ display:inline-block; font-family:var(--fonte-mono); font-size:11px; padding:4px 10px; border-radius:999px; margin-top:8px; }
+.badge-faco{ background:var(--cor-secundaria); color:#fff; }
+.badge-falta{ background:var(--cor-primaria); color:#3a2f22; }
+
+/* ---------- RECEITAS ---------- */
+.receitas{ padding:90px 0; border-top:1px solid var(--cor-borda); }
+.receitas-controles{ display:flex; flex-direction:column; gap:18px; margin-bottom:36px; }
+.tabs-categoria{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.tab-categoria{
+  min-height:48px; padding:0 22px; border-radius:999px; border:1.5px solid var(--cor-borda); background:var(--cor-branco);
+  font-size:13.5px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; position:relative;
+}
+.tab-categoria.ativo{ background:var(--cor-texto); color:#fff; border-color:var(--cor-texto); font-weight:700; }
+.tab-categoria.ativo::after{ content:''; position:absolute; left:50%; bottom:-9px; transform:translateX(-50%); width:6px; height:6px; border-radius:50%; background:var(--cor-destaque); }
+.busca-receita{ max-width:420px; margin:0 auto; width:100%; }
+.busca-receita input{ width:100%; min-height:48px; border:1.5px solid var(--cor-borda); border-radius:999px; padding:0 22px 0 44px; font-size:16px; font-weight:400; background:var(--cor-branco) url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%2355504a%22 stroke-width=%222%22><circle cx=%2211%22 cy=%2211%22 r=%228%22/><line x1=%2221%22 y1=%2221%22 x2=%2216.65%22 y2=%2216.65%22/></svg>') no-repeat 16px center / 18px; }
+.busca-receita input:focus{ outline:none; border-color:var(--cor-destaque); }
+
+.grid-receitas{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+.card-receita{
+  background:var(--cor-branco); border:1px solid var(--cor-borda); border-radius:18px; overflow:hidden; box-shadow:0 12px 32px rgba(28,26,24,0.13);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease; cursor:pointer; display:flex; flex-direction:column; width:100%; max-width:100%;
+}
+.card-receita:hover{ transform:translateY(-6px); box-shadow:var(--sombra-hover); border-color:var(--cor-destaque); }
+.card-receita .foto-wrap{ position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--cor-superficie); }
+.card-receita .foto-wrap img{ width:100%; height:100%; object-fit:cover; }
+.card-receita .badge-categoria{
+  position:absolute; top:12px; left:12px; background:var(--cor-secundaria); font-family:var(--fonte-mono);
+  font-size:11px; padding:6px 13px; border-radius:999px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#fff;
+}
+.hint-toque{
+  position:absolute; bottom:12px; left:12px; background:var(--cor-destaque); color:#fff; font-family:var(--fonte-mono);
+  font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; padding:6px 12px; border-radius:999px;
+}
+.card-receita .conteudo{ padding:20px 22px 24px; display:flex; flex-direction:column; gap:12px; flex:1; }
+.card-receita h3{ font-size:20px; line-height:1.25; font-weight:700; }
+.card-receita .meta-row{ display:flex; gap:14px; font-family:var(--fonte-mono); font-weight:600; font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; color:#55504a; }
+.card-receita .macros-mini{ display:flex; flex-wrap:wrap; gap:10px; font-family:var(--fonte-mono); font-weight:500; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:#3a352e; border-top:1px dashed var(--cor-borda); padding-top:12px; }
+.card-receita .macros-mini b{ color:var(--cor-texto); font-weight:700; }
+.card-receita .ver-btn{ margin-top:auto; display:flex; align-items:center; justify-content:center; gap:8px; padding:13px; border-radius:999px; background:var(--cor-superficie); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.06em; transition:.2s; }
+.card-receita .ver-btn svg{ width:14px; height:14px; stroke:currentColor; transition:transform .2s ease; }
+.card-receita:hover .ver-btn{ background:var(--cor-destaque); color:#fff; }
+.card-receita:hover .ver-btn svg{ transform:translateX(3px); }
+.sem-resultado{ text-align:center; padding:60px 20px; color:#55504a; font-family:var(--fonte-titulo); font-weight:500; font-style:italic; font-size:19px; grid-column:1/-1; }
+
+/* ---------- MODAL RECEITA ---------- */
+.modal-overlay{
+  position:fixed; inset:0; background:rgba(28,26,24,0.55); z-index:2000; display:none;
+  align-items:center; justify-content:center; padding:24px; backdrop-filter:blur(2px);
+}
+.modal-overlay.aberto{ display:flex; }
+.modal-conteudo{
+  background:var(--cor-fundo); max-width:760px; width:100%; max-height:88vh; overflow-y:auto; border-radius:var(--raio-lg);
+  box-shadow:var(--sombra-hover); animation:modalDesktop .28s ease both; position:relative;
+}
+@keyframes modalDesktop{ from{ opacity:0; transform:scale(.96);} to{ opacity:1; transform:scale(1);} }
+.modal-fechar{ position:absolute; top:16px; right:16px; width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.94); display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:600; z-index:5; box-shadow:var(--sombra); }
+.modal-foto{ width:100%; aspect-ratio:16/10; overflow:hidden; border-radius:var(--raio-lg) var(--raio-lg) 0 0; background:var(--cor-superficie); }
+.modal-foto img{ width:100%; height:100%; object-fit:cover; }
+.modal-body{ padding:32px 34px 44px; }
+.modal-body h2{ font-size:clamp(24px,4vw,32px); font-weight:700; margin-bottom:14px; }
+.modal-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:26px; }
+.modal-tags span{ font-family:var(--fonte-mono); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.08em; background:var(--cor-superficie); color:var(--cor-texto); padding:7px 15px; border-radius:999px; }
+.macros-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:32px; }
+.macro-card{ background:var(--cor-superficie); border-radius:var(--raio); padding:18px 10px; text-align:center; box-shadow:0 2px 8px rgba(28,26,24,0.06); }
+.macro-card .valor{ font-family:var(--fonte-mono); font-size:24px; font-weight:700; color:var(--cor-secundaria); }
+.macro-card .rotulo{ font-size:11.5px; font-weight:600; color:#55504a; margin-top:4px; text-transform:uppercase; letter-spacing:.1em; }
+.modal-secao{ margin-bottom:32px; }
+.modal-secao h4{ font-family:var(--fonte-mono); font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--cor-secundaria); margin-bottom:16px; padding-bottom:8px; border-bottom:1px solid var(--cor-borda); display:flex; align-items:center; gap:9px; }
+.modal-secao h4 svg{ width:16px; height:16px; stroke:currentColor; flex-shrink:0; }
+.lista-ingredientes li{
+  display:flex; align-items:flex-start; gap:12px; padding:11px 0; border-bottom:1px dashed var(--cor-borda); font-size:16px; font-weight:400; cursor:pointer;
+}
+.lista-ingredientes li .caixa{ width:20px; height:20px; min-width:20px; border-radius:5px; border:1.5px solid var(--cor-primaria); margin-top:1px; display:flex; align-items:center; justify-content:center; font-size:13px; transition:.2s; }
+.lista-ingredientes li.marcado{ opacity:.5; }
+.lista-ingredientes li.marcado span.texto{ text-decoration:line-through; }
+.lista-ingredientes li.marcado .caixa{ background:var(--cor-secundaria); border-color:var(--cor-secundaria); color:#fff; }
+.lista-preparo li{ display:flex; gap:14px; padding:13px 0; border-bottom:1px dashed var(--cor-borda); font-size:16px; font-weight:400; align-items:flex-start; }
+.lista-preparo li .n{ font-family:var(--fonte-mono); font-weight:700; color:var(--cor-destaque); min-width:22px; }
+.dica-box{ background:var(--cor-superficie); border:1px solid var(--cor-borda); border-radius:var(--raio); padding:24px; display:flex; gap:16px; align-items:flex-start; }
+.dica-box .foto-livia{ width:52px; height:52px; border-radius:50%; overflow:hidden; flex-shrink:0; }
+.dica-box .foto-livia img{ width:100%; height:100%; object-fit:cover; }
+.dica-box .avatar-fallback{ border-radius:50%; }
+.dica-box .avatar-fallback .monograma{ font-size:18px; }
+.dica-box p{ font-style:italic; font-weight:500; font-size:16px; line-height:1.6; }
+.dica-box .assinatura{ margin-top:10px; font-family:var(--fonte-mono); font-weight:600; letter-spacing:.06em; font-size:12.5px; color:var(--cor-destaque); font-style:normal; }
+.tabela-sub{ width:100%; border-collapse:collapse; font-size:15px; font-weight:400; }
+.tabela-sub td{ padding:13px 10px; border-bottom:1px solid var(--cor-borda); }
+.tabela-sub .seta-td{ color:var(--cor-destaque); text-align:center; width:30px; }
+.sem-sub{ color:#55504a; font-style:italic; font-weight:500; font-size:15px; }
+
+/* ---------- CARDÁPIO ---------- */
+.cardapio{ padding:90px 0; background:var(--cor-superficie); border-top:1px solid var(--cor-borda); }
+.cardapio-form{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:24px; }
+.campo{ display:flex; flex-direction:column; gap:8px; }
+.campo label{ font-family:var(--fonte-mono); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:#55504a; }
+.campo input[type=number], .campo select{
+  min-height:48px; border:1.5px solid var(--cor-borda); border-radius:var(--raio); padding:0 16px; font-size:16px; font-weight:500; background:var(--cor-fundo);
+}
+.campo input:focus, .campo select:focus{ outline:none; border-color:var(--cor-destaque); }
+.restricoes{ display:flex; gap:10px; flex-wrap:wrap; }
+.chip-restricao{ min-height:48px; padding:0 18px; border-radius:999px; border:1.5px solid var(--cor-borda); background:var(--cor-fundo); font-size:13.5px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; }
+.chip-restricao.ativo{ background:var(--cor-secundaria); border-color:var(--cor-secundaria); color:#fff; font-weight:700; }
+.tabela-cardapio-wrap{ overflow-x:auto; margin-top:32px; border-radius:var(--raio); box-shadow:var(--sombra); border:1px solid var(--cor-borda); }
+.tabela-cardapio{ width:100%; border-collapse:collapse; background:var(--cor-branco); min-width:760px; }
+.tabela-cardapio th, .tabela-cardapio td{ padding:15px 16px; border-bottom:1px solid var(--cor-borda); text-align:left; font-size:13.5px; font-weight:500; vertical-align:top; }
+.tabela-cardapio th{ font-family:var(--fonte-mono); text-transform:uppercase; font-weight:700; font-size:11px; letter-spacing:.1em; color:#55504a; background:var(--cor-superficie); }
+.tabela-cardapio td .nome-receita{ font-weight:700; display:block; margin-bottom:3px; }
+.tabela-cardapio td .cal-receita{ font-family:var(--fonte-mono); font-weight:600; letter-spacing:.04em; font-size:11.5px; color:var(--cor-destaque); }
+.acoes-cardapio{ display:flex; gap:14px; margin-top:28px; flex-wrap:wrap; }
+.lista-compras{ margin-top:30px; background:var(--cor-branco); border:1px solid var(--cor-borda); border-radius:var(--raio-lg); padding:32px; box-shadow:var(--sombra); }
+.lista-compras h4{ font-family:var(--fonte-mono); font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--cor-secundaria); margin:22px 0 10px; }
+.lista-compras h4:first-child{ margin-top:0; }
+.lista-compras ul li{ padding:7px 0; font-size:15px; font-weight:400; border-bottom:1px dashed var(--cor-borda); }
+
+/* ---------- GLOSSÁRIO ---------- */
+.glossario{ padding:90px 0; border-top:1px solid var(--cor-borda); }
+.glossario-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+.termo{ background:var(--cor-branco); border:1px solid var(--cor-borda); border-radius:var(--raio); padding:24px 26px; }
+.termo .letra{ font-family:var(--fonte-mono); color:var(--cor-destaque); font-weight:700; letter-spacing:.06em; font-size:12px; }
+.termo h4{ font-size:18px; font-weight:700; margin:6px 0 8px; }
+.termo p{ font-size:16px; font-weight:400; color:#3a352e; }
+
+/* ---------- RODAPÉ ---------- */
+.rodape{ background:var(--cor-texto); color:#e9e4dc; padding:80px 0 34px; text-align:center; }
+.rodape .logo-rodape{ font-family:var(--fonte-titulo); font-size:30px; font-weight:700; margin-bottom:20px; }
+.rodape .linha-separadora{ width:100%; max-width:220px; height:1px; background:rgba(255,255,255,0.1); margin:0 auto 26px; }
+.rodape .frase{ font-style:italic; font-weight:500; color:var(--cor-primaria); margin-bottom:26px; font-size:17px; }
+.rodape .insta{ display:inline-flex; align-items:center; gap:9px; font-size:14px; font-weight:600; letter-spacing:.04em; margin-bottom:28px; }
+.rodape .insta svg{ width:18px; height:18px; stroke:#e9e4dc; }
+.rodape .copy{ font-size:12.5px; font-weight:500; color:#b8b1a5; letter-spacing:.02em; font-family:var(--fonte-mono); }
+
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 980px){
+  .hero-grid{ grid-template-columns:1fr; }
+  .hero{ padding:120px 0 60px; text-align:center; }
+  .hero-ctas{ justify-content:center; }
+  .badges-flutuantes{ justify-content:center; }
+  .hero-foto{ max-width:340px; margin:0 auto; order:-1; }
+  .pilares{ grid-template-columns:1fr; }
+  .passos{ grid-template-columns:repeat(2,1fr); }
+  .grid-receitas{ grid-template-columns:repeat(2,1fr); }
+  .cardapio-form{ grid-template-columns:1fr; }
+  .glossario-grid{ grid-template-columns:1fr; }
+  .macros-grid{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width: 680px){
+  .container{ padding:0 20px; }
+  .nav-links{ position:fixed; top:72px; left:0; right:0; background:var(--cor-fundo); flex-direction:column; padding:16px 20px 26px; gap:4px; border-bottom:1px solid var(--cor-borda); transform:translateY(-130%); transition:transform .3s ease; max-height:calc(100vh - 72px); overflow-y:auto; }
+  .nav-links.aberto{ transform:translateY(0); }
+  .nav-links a{ min-height:52px; width:100%; display:flex; align-items:center; }
+  .hamburger{ display:flex; }
+  .nav-cta{ align-self:stretch; justify-content:center; margin-top:8px; min-height:52px; }
+  .passos{ grid-template-columns:1fr; }
+  .grid-receitas{ grid-template-columns:1fr; }
+  .resultado-grid{ grid-template-columns:1fr; }
+  .card-receita{ border-radius:16px; max-width:100%; }
+  .modal-overlay{ padding:0; align-items:flex-end; }
+  .modal-conteudo{ max-height:94vh; border-radius:var(--raio-lg) var(--raio-lg) 0 0; animation:modalMobile .3s ease both; }
+  @keyframes modalMobile{ from{ transform:translateY(100%);} to{ transform:translateY(0);} }
+  .modal-body{ padding:20px 18px 48px; }
+  .macros-grid{ grid-template-columns:repeat(2,1fr); }
+  .ferramenta-bloco{ padding:26px 20px; }
+  .cardapio-form{ gap:20px; }
+  .hero h1{ font-size:clamp(36px,10vw,52px); }
+  .badge-flutuante{ font-size:12px; padding:10px 18px; }
+  .btn{ min-height:52px; }
+  .modal-body{ padding:20px 18px 48px; }
+  .scroll-hint{ display:none; }
+  .btn, .pill, .tab-categoria, .chip-restricao, .item-geladeira, .modal-fechar, .hamburger{ min-height:52px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#topo" class="nav-logo">Lívia Valença</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#como-usar">Como Usar</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#receitas">Receitas</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#glossario">Glossário</a>
+      <a href="#receitas" class="nav-cta" style="color:#FFFFFF !important; padding:14px 32px !important;">Explorar Receitas</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="topo" class="hero textura-pontos">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-tag">Comida boa que, por acaso, também entrega macronutrientes melhores</span>
+      <h1>Lívia Valença</h1>
+      <p class="subtitulo">Comida que você realmente quer comer</p>
+      <p class="tagline">35 receitas proteicas. Sem sofrimento. Sem sabor de papelão.</p>
+      <div class="hero-ctas">
+        <a href="#receitas" class="btn btn-primary">Explorar Receitas</a>
+        <a href="#ferramentas" class="btn btn-secondary">Ferramentas</a>
+      </div>
+      <div class="badges-flutuantes">
+        <span class="badge-flutuante">35 receitas</span>
+        <span class="badge-flutuante">100% offline</span>
+        <span class="badge-flutuante">Proteína sem sofrimento</span>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <img src="Docs/Perfil-Lívia.png" alt="Lívia Valença" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="avatar-fallback" style="display:none;">
+        <span class="monograma">LV</span>
+        <span class="legenda">LÍVIA VALENÇA</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Descubra</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="sobre">
+  <div class="container">
+    <div class="sobre-texto">
+      <blockquote>"Eu não faço receita fit. Eu faço comida boa que, por acaso, também entrega macronutrientes melhores. Se não estiver gostoso, não vale os macronutrientes."</blockquote>
+      <p class="assinatura">— LÍVIA VALENÇA</p>
+    </div>
+    <div class="pilares">
+      <div class="pilar"><div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4.5-2-7-5.5-7-9.5A7 7 0 0 1 12 4a7 7 0 0 1 7 7.5c0 4-2.5 7.5-7 9.5Z"/><path d="M12 8v8"/><path d="M9 11c1 1 4 1 5 0"/></svg></div><h3>Sabor primeiro</h3><p>Toda receita passa no teste mais importante: dá vontade de repetir?</p></div>
+      <div class="pilar"><div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5 4 4"/><path d="M17.5 6.5 20 4"/><rect x="6" y="9" width="12" height="6" rx="3"/><path d="M4 9v6M20 9v6"/></svg></div><h3>Proteína sem sofrimento</h3><p>Macronutrientes bons não exigem prato triste. Frango, ovo, queijo — de verdade.</p></div>
+      <div class="pilar"><div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 2 2v9"/><path d="M7 3v5M11 3v5"/><path d="M17 3c-1.5 0-3 1.5-3 4.5S15.5 12 17 12v9"/></svg></div><h3>Comida de verdade</h3><p>Ingredientes que você reconhece, técnicas que funcionam na sua cozinha.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO USAR ============ -->
+<section id="como-usar" class="como-usar">
+  <div class="container">
+    <div class="secao-head">
+      <span class="eyebrow">Como usar</span>
+      <h2>Esse e-book pensa por você</h2>
+      <p>Além das 35 receitas completas, você tem 5 ferramentas que resolvem o problema de "o que eu como agora".</p>
+    </div>
+    <div class="passos">
+      <div class="passo"><span class="num">01</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>Buscador</h3><p>Filtra pelas suas 3 vontades do momento e mostra só o que combina.</p></div>
+      <div class="passo"><span class="num">02</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>Substituições</h3><p>Não tem um ingrediente? A gente já te diz o substituto e o impacto nos macronutrientes.</p></div>
+      <div class="passo"><span class="num">03</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 2v20M5 8h4M5 16h4M15 8h4M15 16h4"/></svg>Geladeira</h3><p>Marca o que você tem em casa e vê o que dá pra fazer agora mesmo.</p></div>
+      <div class="passo"><span class="num">04</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Cardápio + Lista</h3><p>Monta sua semana inteira e gera a lista de compras automaticamente.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FERRAMENTAS ============ -->
+<section id="ferramentas" class="ferramentas">
+  <div class="container">
+    <div class="secao-head com-linha">
+      <span class="eyebrow">Ferramentas interativas</span>
+      <h2>Encontre sua receita perfeita</h2>
+    </div>
+
+    <!-- SISTEMA 1 -->
+    <div class="ferramenta-bloco">
+      <div class="ferramenta-titulo"><span class="emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></span><div><h3>Encontre sua receita perfeita</h3><p>Combine os 3 filtros e veja só o que serve pra você agora.</p></div></div>
+      <div class="filtro-grupo">
+        <span class="filtro-grupo-label">Momento da refeição</span>
+        <div class="pill-row" id="filtroMomento">
+          <button class="pill ativo" data-valor="qualquer">Qualquer</button>
+          <button class="pill" data-valor="cafe-lanches">Café da Manhã & Lanches</button>
+          <button class="pill" data-valor="almoco-janta">Almoço e Janta</button>
+          <button class="pill" data-valor="sobremesas">Sobremesas</button>
+        </div>
+      </div>
+      <div class="filtro-grupo">
+        <span class="filtro-grupo-label">Meta calórica</span>
+        <div class="pill-row" id="filtroCalorias">
+          <button class="pill ativo" data-valor="qualquer">Qualquer</button>
+          <button class="pill" data-valor="0-300">Até 300 kcal</button>
+          <button class="pill" data-valor="300-500">300–500 kcal</button>
+          <button class="pill" data-valor="500-700">500–700 kcal</button>
+          <button class="pill" data-valor="700-9999">Acima de 700 kcal</button>
+        </div>
+      </div>
+      <div class="filtro-grupo">
+        <span class="filtro-grupo-label">Vontade agora</span>
+        <div class="pill-row" id="filtroVontade">
+          <button class="pill ativo" data-valor="qualquer">Qualquer</button>
+          <button class="pill" data-valor="salgado">Proteico e Salgado</button>
+          <button class="pill" data-valor="doce">Doce</button>
+          <button class="pill" data-valor="leve">Leve</button>
+          <button class="pill" data-valor="substancioso">Substancioso</button>
+        </div>
+      </div>
+      <div class="resultado-grid" id="resultadoSistema1"></div>
+    </div>
+
+    <!-- SISTEMA 2 -->
+    <div class="ferramenta-bloco">
+      <div class="ferramenta-titulo"><span class="emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg></span><div><h3>Não tem o ingrediente? A gente resolve.</h3><p>Digite um ingrediente e veja o substituto ideal.</p></div></div>
+      <div class="busca-ingrediente">
+        <input type="text" id="inputSubstituicao" list="listaIngredientes" placeholder="Digite um ingrediente... (ex: cream cheese, banana, doce de leite)">
+        <datalist id="listaIngredientes"></datalist>
+      </div>
+      <div id="resultadoSistema2"></div>
+    </div>
+
+    <!-- SISTEMA 3 -->
+    <div class="ferramenta-bloco">
+      <div class="ferramenta-titulo"><span class="emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 2v20M5 8h4M5 16h4M15 8h4M15 16h4"/></svg></span><div><h3>O que você tem em casa agora?</h3><p>Marque os ingredientes disponíveis e veja o que dá pra cozinhar.</p></div></div>
+      <div class="grid-geladeira" id="gridGeladeira"></div>
+      <div class="resultado-geladeira" id="resultadoSistema3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECEITAS ============ -->
+<section id="receitas" class="receitas">
+  <div class="container">
+    <div class="secao-head com-linha">
+      <span class="eyebrow">O acervo completo</span>
+      <h2>35 Receitas Proteicas</h2>
+      <p>Café da manhã, almoço, janta, lanche, sobremesa e marmita. Tudo com foto, macronutrientes e modo de preparo.</p>
+    </div>
+    <div class="receitas-controles">
+      <div class="busca-receita"><input type="text" id="buscaReceita" placeholder="Buscar receita pelo nome..."></div>
+      <div class="tabs-categoria" id="tabsCategoria">
+        <button class="tab-categoria ativo" data-valor="todas">Todas</button>
+        <button class="tab-categoria" data-valor="cafe-lanches">Café & Lanches</button>
+        <button class="tab-categoria" data-valor="almoco-janta">Almoço e Janta</button>
+        <button class="tab-categoria" data-valor="sobremesas">Sobremesas</button>
+      </div>
+    </div>
+    <div class="grid-receitas" id="gridReceitas"></div>
+  </div>
+</section>
+
+<!-- ============ CARDÁPIO SEMANAL ============ -->
+<section id="cardapio" class="cardapio">
+  <div class="container">
+    <div class="secao-head com-linha">
+      <span class="eyebrow">Sistema 4</span>
+      <h2>Monte sua semana proteica</h2>
+      <p>Defina sua meta e a gente monta o cardápio da semana inteira — com lista de compras pronta.</p>
+    </div>
+    <div class="cardapio-form">
+      <div class="campo">
+        <label for="metaCalorica">Meta calórica diária</label>
+        <input type="number" id="metaCalorica" value="1800" min="800" step="50">
+      </div>
+      <div class="campo">
+        <label for="refeicoesPorDia">Refeições por dia</label>
+        <select id="refeicoesPorDia">
+          <option value="3">3 refeições</option>
+          <option value="4" selected>4 refeições</option>
+          <option value="5">5 refeições</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label>Restrições</label>
+        <div class="restricoes" id="restricoes">
+          <button class="chip-restricao ativo" data-valor="nenhuma">Nenhuma</button>
+          <button class="chip-restricao" data-valor="semGluten">Sem glúten</button>
+          <button class="chip-restricao" data-valor="semLactose">Sem lactose</button>
+          <button class="chip-restricao" data-valor="semPeixe">Sem peixe</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" id="btnGerarCardapio">Gerar Cardápio da Semana</button>
+    <div class="tabela-cardapio-wrap" id="wrapTabelaCardapio" style="display:none;">
+      <table class="tabela-cardapio" id="tabelaCardapio"></table>
+    </div>
+    <div class="acoes-cardapio" id="acoesCardapio" style="display:none;">
+      <button class="btn btn-outline-destaque" id="btnGerarLista">Gerar Lista de Compras</button>
+    </div>
+    <div class="lista-compras" id="listaComprasWrap" style="display:none;">
+      <div class="ferramenta-titulo"><span class="emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/><path d="M2 3h2l2.6 12.4a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 7H5.2"/></svg></span><div><h3>Lista de Compras da Semana</h3><p>Consolidada e agrupada por categoria.</p></div></div>
+      <div id="listaComprasConteudo"></div>
+      <button class="btn btn-secondary" id="btnCopiarLista" style="margin-top:20px;">Copiar Lista</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GLOSSÁRIO ============ -->
+<section id="glossario" class="glossario">
+  <div class="container">
+    <div class="secao-head com-linha">
+      <span class="eyebrow">Glossário</span>
+      <h2>Ingredientes fit, explicados</h2>
+      <p>Sem economês. Aqui vai o que cada ingrediente faz de verdade na receita.</p>
+    </div>
+    <div class="glossario-grid" id="gridGlossario"></div>
+  </div>
+</section>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="rodape">
+  <div class="container">
+    <div class="logo-rodape">Lívia Valença</div>
+    <div class="linha-separadora"></div>
+    <p class="frase">"Se não estiver gostoso, não vale os macronutrientes."</p>
+    <div class="insta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg> @euliviavalenca</div>
+    <p class="copy">© 2026 Lívia Valença — Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<!-- ============ MODAL RECEITA ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-conteudo">
+    <button class="modal-fechar" id="modalFechar">✕</button>
+    <div class="modal-foto"><img id="modalFoto" src="" alt=""></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   PARTE 1 — BASE DE DADOS DAS 35 RECEITAS
+   Extraída manualmente dos arquivos .txt da pasta RECEITAS, conforme o briefing.
+   ============================================================ */
+const RECEITAS = [
+
+/* ---------------- ☀️ CAFÉ DA MANHÃ & LANCHES (11) ---------------- */
+{
+  id:1, nome:"Crepioca de Banoffee", categoria:"cafe-lanches",
+  tempo:12, tempoTexto:"12 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/CAFÉ DA MANHÃ/CREPIOCA DE BANOFFEE/CREPIOCA DE BANOFFEE.png",
+  macros:{calorias:387, proteina:10.7, carbs:68.7, gordura:8.2, fibras:2.0},
+  ingredientes:["ovo","goma de tapioca","leite integral","doce de leite","banana","iogurte natural","canela"],
+  ingredientesTexto:["1 ovo","2 colheres de sopa de goma de tapioca hidratada (40 g)","1 colher de sopa de leite integral (15 ml)","1 colher de sopa de doce de leite (19 g)","1 banana pequena (80 g)","1/2 copo de iogurte natural (85 g)","Canela a gosto"],
+  modoPreparo:["Em uma tigela, bata bem o ovo.","Acrescente a goma de tapioca e o leite e misture até obter uma massa uniforme.","Aqueça uma frigideira antiaderente em fogo baixo a médio-baixo.","Despeje toda a massa e espalhe delicadamente para formar um disco.","Cozinhe por aproximadamente 2 a 3 minutos, até a parte inferior firmar e a superfície perder a aparência líquida.","Vire cuidadosamente e cozinhe o outro lado por mais 1 a 2 minutos.","Enquanto isso, corte a banana em rodelas.","Retire a crepioca da frigideira e espalhe o doce de leite sobre uma das metades.","Distribua a banana e o iogurte natural sobre o recheio.","Polvilhe canela a gosto.","Dobre a crepioca ao meio e sirva imediatamente."],
+  dica:"Prepare a crepioca em fogo baixo a médio-baixo para que o ovo cozinhe por completo sem ressecar ou queimar a massa.",
+  substituicoes:[{de:"Goma de tapioca", para:"2 colheres de sopa de farinha de aveia"}],
+  vontade:"doce"
+},
+{
+  id:2, nome:"Panqueca de Frango com Molho Cremoso", categoria:"cafe-lanches",
+  tempo:20, tempoTexto:"20 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/CAFÉ DA MANHÃ/PANQUECA DE FRANGO COM MOLHO CREMOSO/PANQUECA DE FRANGO COM MOLHO CREMOSO.png",
+  macros:{calorias:380, proteina:33.7, carbs:34.8, gordura:12.1, fibras:1.6},
+  ingredientes:["ovo","goma de tapioca","frango desfiado","cenoura","tomate","muçarela","cebola","requeijão light","leite desnatado"],
+  ingredientesTexto:["1 ovo grande","30 g de goma de tapioca","1 pitada de sal","60 g de frango cozido e desfiado","30 g de cenoura","40 g de tomate","10 g de muçarela light","15 g de cebola","15 g de requeijão light","20 ml de leite desnatado","Sal a gosto","10 g de muçarela light (finalizar)","Orégano a gosto"],
+  modoPreparo:["Misture o ovo, a goma de tapioca e uma pitada de sal até obter uma massa homogênea.","Despeje a mistura em uma frigideira antiaderente e cozinhe até a massa firmar.","Recheie com o frango desfiado, a cenoura, o tomate e 10 g de muçarela light.","Feche a panqueca e reserve.","Para o molho, refogue a cebola e acrescente o requeijão light e o leite desnatado.","Misture em fogo baixo até obter um molho cremoso e ajuste o sal.","Despeje o molho sobre a panqueca.","Finalize com os 10 g restantes de muçarela light e orégano a gosto.","Leve ao micro-ondas por aproximadamente 1 minuto e 30 segundos, ou até o queijo derreter."],
+  dica:"Deixe o molho levemente cremoso antes de colocar sobre a panqueca, porque ele ainda encorpa um pouco na finalização.",
+  substituicoes:[],
+  vontade:"salgado"
+},
+{
+  id:3, nome:"Pão Proteico de Frango", categoria:"cafe-lanches",
+  tempo:58, tempoTexto:"55–60 minutos", dificuldade:"Fácil", porcoes:11, porcoesTexto:"11 fatias",
+  imagem:"RECEITAS/CAFÉ DA MANHÃ/PÃO PROTEICO DE FRANGO/PÃO PROTEICO DE FRANGO.png",
+  macros:{calorias:101, proteina:12.7, carbs:1.0, gordura:5.0, fibras:0.0},
+  ingredientes:["ovo","frango desfiado","queijo minas","fermento","gergelim","azeite"],
+  ingredientesTexto:["5 ovos","300 g de frango cozido e desfiado","100 g de queijo minas padrão ralado","1 colher de café de sal","1 colher de sopa rasa de fermento em pó","Gergelim branco e preto a gosto, opcional, para finalizar","Azeite para untar, se necessário"],
+  modoPreparo:["Adicione os ovos, o frango, o queijo e o sal ao liquidificador e bata até obter uma mistura homogênea.","Acrescente o fermento por último e misture delicadamente ou utilize a função pulsar apenas até incorporá-lo à massa.","Unte uma forma antiaderente com azeite ou forre com papel-manteiga.","Transfira a massa para a forma e finalize com gergelim ou outras sementes de sua preferência, se desejar.","Asse em forno preaquecido a 180 °C por aproximadamente 35 minutos.","Retire do forno e espere esfriar antes de desenformar.","Corte em 11 fatias."],
+  dica:"Espere o pão esfriar antes de desenformar para ajudar a preservar a estrutura e evitar que ele quebre.",
+  substituicoes:[{de:"Gergelim", para:"outras sementes de sua preferência"}],
+  vontade:"salgado"
+},
+{
+  id:4, nome:"Pão Proteico de Frango Temperado", categoria:"cafe-lanches",
+  tempo:48, tempoTexto:"45–50 minutos", dificuldade:"Fácil", porcoes:10, porcoesTexto:"10 fatias",
+  imagem:"RECEITAS/CAFÉ DA MANHÃ/PÃO PROTEICO DE FRANGO TEMPERADO/PÃO PROTEICO DE FRANGO TEMPERADO.png",
+  macros:{calorias:108, proteina:18.3, carbs:0.9, gordura:3.5, fibras:0.0},
+  ingredientes:["frango desfiado","ovo","fermento","temperos"],
+  ingredientesTexto:["500 g de peito de frango cozido e desfiado","5 ovos","1 colher de sopa rasa de fermento químico em pó","Temperos a gosto"],
+  modoPreparo:["Preaqueça o forno a 180 °C.","Forre uma forma pequena ou média para pão com papel-manteiga ou utilize uma forma de silicone.","Certifique-se de que o frango esteja bem drenado.","Adicione os ovos ao liquidificador ou processador e bata rapidamente até ficarem homogêneos.","Acrescente o frango e os temperos.","Bata até obter uma massa espessa e relativamente homogênea.","Adicione o fermento por último e incorpore delicadamente, utilizando a função pulsar ou uma espátula.","Transfira a massa para a forma e nivele a superfície.","Asse a 180 °C por aproximadamente 30–35 minutos, ou até que o centro esteja firme e a superfície levemente dourada.","Retire do forno e aguarde aproximadamente 10 minutos antes de desenformar.","Deixe amornar antes de cortar.","Divida em aproximadamente 10 fatias."],
+  dica:"Deixe o frango bem drenado antes de preparar a massa e espere o pão amornar antes de cortar para preservar melhor a estrutura das fatias.",
+  substituicoes:[],
+  vontade:"salgado"
+},
+{
+  id:5, nome:"Crepe Proteico de Frango e Queijo", categoria:"cafe-lanches",
+  tempo:20, tempoTexto:"20 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/CREPE PROTEICO DE FRANGO E QUEIJO/CREPE PROTEICO DE FRANGO E QUEIJO.png",
+  macros:{calorias:387, proteina:37.5, carbs:21.2, gordura:19.8, fibras:5.4},
+  ingredientes:["ovo","farelo de aveia","leite desnatado","muçarela","creme de ricota","frango desfiado","alface","tomate","azeite"],
+  ingredientesTexto:["1 ovo","30 g de farelo de aveia","30 ml de leite desnatado","Sal a gosto","Pimenta-do-reino a gosto","30 g de muçarela","20 g de creme de ricota light","50 g de frango cozido e desfiado","15 g de alface","50 g de tomate","1 colher de chá de azeite (5 g)"],
+  modoPreparo:["Em uma tigela, misture o ovo, o farelo de aveia, o leite desnatado, o sal e a pimenta-do-reino até obter uma massa homogênea.","Unte uma frigideira grande e antiaderente com o azeite e aqueça em fogo baixo.","Despeje a massa na frigideira e faça movimentos circulares para espalhá-la por todo o fundo.","Tampe e cozinhe em fogo baixo até que a base comece a se soltar.","Vire o crepe e deixe dourar do outro lado.","Transfira para um prato e faça um corte do centro até uma das bordas.","Distribua o creme de ricota light e o frango desfiado em duas partes do crepe.","Nas outras partes, distribua a muçarela, a alface e o tomate, intercalando os recheios.","Dobre o crepe sobre os recheios até formar uma porção compacta.","Retorne o crepe à frigideira e doure dos dois lados antes de servir."],
+  dica:"Se utilizar farelo de aveia mais grosso, bata-o rapidamente no liquidificador antes do preparo para obter uma massa mais uniforme.",
+  substituicoes:[{de:"Farelo de aveia", para:"farinha de aveia, farinha de trigo ou farinha de arroz"},{de:"30 g de muçarela", para:"15 g de muçarela + 20 g de ricota"},{de:"Frango desfiado", para:"tofu ou soja à bolonhesa"}],
+  vontade:"salgado"
+},
+{
+  id:6, nome:"Muffin Proteico de Frango e Brócolis", categoria:"cafe-lanches",
+  tempo:38, tempoTexto:"35–40 minutos", dificuldade:"Fácil", porcoes:6, porcoesTexto:"6 muffins",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/MUFFIN PROTEICO DE FRANGO E BRÓCOLIS/MUFFIN PROTEICO DE FRANGO E BRÓCOLIS.png",
+  macros:{calorias:197, proteina:23.2, carbs:7.8, gordura:7.6, fibras:1.1},
+  ingredientes:["ovo","leite integral","farinha de aveia","frango desfiado","brócolis","muçarela","tomate-cereja","páprica","orégano"],
+  ingredientesTexto:["4 ovos","150 ml de leite integral","4 colheres de sopa de farinha de aveia","300 g de frango cozido e desfiado","100 g de brócolis picado","Páprica a gosto","Tempero de cebola, alho e salsa a gosto","30 g de queijo muçarela ralado","60 g de tomate-cereja","Orégano a gosto"],
+  modoPreparo:["Preaqueça o forno a 180 °C.","Separe 6 forminhas médias de muffin, preferencialmente de silicone ou forradas com papel.","Em uma tigela, bata ligeiramente os ovos.","Acrescente o leite e a farinha de aveia. Misture até obter uma base uniforme.","Adicione o frango desfiado e o brócolis picado.","Tempere com páprica e tempero de cebola, alho e salsa. Misture até distribuir bem os ingredientes.","Divida a mistura igualmente entre as 6 forminhas.","Finalize cada muffin com a muçarela ralada, o tomate-cereja e o orégano.","Asse por aproximadamente 20–25 minutos, ou até que estejam firmes no centro e levemente dourados.","Retire do forno e aguarde aproximadamente 5 minutos antes de desenformar."],
+  dica:"Você pode acrescentar palmito ou milho à massa para variar o recheio. Lembre-se de que essas adições alteram os macronutrientes da receita.",
+  substituicoes:[],
+  vontade:"salgado"
+},
+{
+  id:7, nome:"Palitinhos Proteicos de Frango com Queijo", categoria:"cafe-lanches",
+  tempo:50, tempoTexto:"50 minutos", dificuldade:"Fácil", porcoes:6, porcoesTexto:"6 porções de 5 palitinhos",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/PALITINHOS PROTEICOS DE FRANGO COM QUEIJO/PALITINHOS PROTEICOS DE FRANGO COM QUEIJO.png",
+  macros:{calorias:235, proteina:39.3, carbs:0.9, gordura:8.3, fibras:0.0},
+  ingredientes:["frango","ovo","parmesão","temperos"],
+  ingredientesTexto:["1 kg de peito de frango cru","2 ovos","50 g de queijo parmesão ralado","Temperos a gosto"],
+  modoPreparo:["Corte o peito de frango em pedaços menores.","Coloque o frango, os ovos, o parmesão e os temperos em um processador.","Processe até obter uma massa cremosa e homogênea.","Transfira a mistura para um saco de confeitar ou saco plástico limpo.","Corte uma pequena abertura na ponta e modele aproximadamente 30 palitinhos sobre uma forma antiaderente.","Leve ao forno preaquecido a 180 °C por aproximadamente 20–25 minutos, ou até dourar.","Depois de assados, reúna os palitinhos em uma assadeira.","Reduza a temperatura do forno para 170 °C e asse novamente por mais 15 minutos, ou até ficarem bem crocantes.","Retire do forno e deixe esfriar antes de servir."],
+  dica:"Na segunda etapa do forno, deixe os palitinhos perderem bastante umidade para ficarem mais sequinhos e crocantes.",
+  substituicoes:[{de:"Queijo parmesão", para:"queijo meia cura"}],
+  vontade:"salgado"
+},
+{
+  id:8, nome:"Wrap Proteico de Cottage e Ovos", categoria:"cafe-lanches",
+  tempo:32, tempoTexto:"30–35 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/WRAP PROTEICO DE COTTAGE E OVOS/WRAP PROTEICO DE COTTAGE E OVOS.png",
+  macros:{calorias:440, proteina:32.5, carbs:29.9, gordura:21.4, fibras:5.4},
+  ingredientes:["wrap integral","cottage","ovo","tomate-cereja","espinafre","muçarela"],
+  ingredientesTexto:["1 wrap integral","100 g de cottage","2 ovos","60 g de tomate-cereja","20 g de espinafre","20 g de muçarela light ralada"],
+  modoPreparo:["Preaqueça o forno a 180 °C.","Disponha o wrap em um refratário pequeno, pressionando delicadamente o centro e as laterais para formar uma borda.","Espalhe o cottage sobre a base do wrap.","Distribua o espinafre sobre o cottage.","Acrescente os tomates-cereja cortados ao meio.","Quebre os ovos diretamente sobre o recheio, mantendo-os dentro das bordas do wrap.","Finalize com a muçarela light ralada.","Asse a 180 °C por aproximadamente 20–30 minutos, ou até que as claras estejam firmes, o queijo derretido e as bordas do wrap douradas e crocantes.","Aguarde aproximadamente 2–3 minutos antes de retirar do refratário e servir."],
+  dica:"Comece a verificar o ponto a partir de 20 minutos de forno. Para uma gema mais firme, mantenha o wrap por alguns minutos adicionais dentro da faixa indicada.",
+  substituicoes:[{de:"Espinafre", para:"rúcula ou outro vegetal de sua preferência"}],
+  vontade:"salgado"
+},
+{
+  id:9, nome:"Bolinho Proteico de Batata-Doce e Frango", categoria:"cafe-lanches",
+  tempo:30, tempoTexto:"30 minutos", dificuldade:"Fácil", porcoes:5, porcoesTexto:"5 porções (10 bolinhos)",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/BOLINHO PROTEICO DE BATATA-DOCE E FRANGO/BOLINHO PROTEICO DE BATATA-DOCE E FRANGO.png",
+  macros:{calorias:115, proteina:11.8, carbs:15.6, gordura:2.4, fibras:2.5},
+  ingredientes:["batata-doce","frango desfiado","ovo","farelo de aveia","queijo"],
+  ingredientesTexto:["1 xícara de batata-doce cozida ou assada","1 xícara de peito de frango desfiado ou em cubos","1 ovo","1/2 xícara de farelo de aveia","Temperos a gosto","Queijo a gosto, opcional, para rechear"],
+  modoPreparo:["Adicione a batata-doce, o frango, o ovo, o farelo de aveia e os temperos ao processador.","Processe até obter uma massa homogênea e modelável.","Divida a massa e modele aproximadamente 10 bolinhos.","Se desejar, recheie cada bolinho com queijo.","Disponha os bolinhos na air fryer.","Asse a 180 °C por aproximadamente 15 minutos, ou até dourar."],
+  dica:"O queijo é opcional e pode ser utilizado como recheio para deixar os bolinhos mais cremosos. Nesse caso, os macronutrientes da receita serão alterados.",
+  substituicoes:[{de:"Batata-doce cozida", para:"batata-doce assada"},{de:"Frango desfiado", para:"frango em cubos"}],
+  vontade:"salgado"
+},
+{
+  id:10, nome:"Pão de Queijo Proteico", categoria:"cafe-lanches",
+  tempo:20, tempoTexto:"20 minutos", dificuldade:"Fácil", porcoes:3, porcoesTexto:"3 porções de 2 unidades",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/PÃO DE QUEIJO PROTEICO/PÃO DE QUEIJO PROTEICO.png",
+  macros:{calorias:113, proteina:11.0, carbs:1.1, gordura:7.2, fibras:0.0},
+  ingredientes:["ovo","muçarela","temperos"],
+  ingredientesTexto:["3 claras de ovo","100 g de queijo muçarela ralado","Sal a gosto","Temperos a gosto"],
+  modoPreparo:["Bata as claras em neve até ficarem firmes.","Incorpore delicadamente a muçarela ralada às claras.","Tempere com sal e os temperos de sua preferência.","Divida a mistura em 6 porções e modele.","Disponha em uma assadeira ou recipiente próprio para air fryer.","Asse a 180 °C por aproximadamente 12–15 minutos, ou até dourar."],
+  dica:"Bata bem as claras em neve para deixar a preparação mais leve e aerada.",
+  substituicoes:[{de:"Forno", para:"air fryer"}],
+  vontade:"salgado"
+},
+{
+  id:11, nome:"Panqueca Bombom de Morango", categoria:"cafe-lanches",
+  tempo:15, tempoTexto:"15 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/PANQUECA BOMBOM DE MORANGO/PANQUECA BOMBOM DE MORANGO.png",
+  macros:{calorias:390, proteina:48.0, carbs:28.0, gordura:12.7, fibras:6.0},
+  ingredientes:["ovo","iogurte natural","cacau em pó","farinha de aveia","whey protein","morango","chocolate"],
+  ingredientesTexto:["1 ovo inteiro","15 g de iogurte natural","8 g de cacau em pó 100%","10 g de farinha de aveia","Adoçante não calórico a gosto","50 g de whey protein sabor chocolate branco ou de sua preferência","Água aos poucos, até atingir consistência cremosa","60 g de morangos picados","10 g de chocolate derretido"],
+  modoPreparo:["Em uma tigela, misture o ovo, o iogurte, o cacau em pó, a farinha de aveia e o adoçante até obter uma massa homogênea.","Despeje a massa em uma frigideira antiaderente e cozinhe em fogo baixo até firmar.","Vire cuidadosamente e cozinhe o outro lado até dourar levemente.","Para o recheio, misture o whey com pequenas quantidades de água até formar um creme.","Acrescente os morangos picados ao creme de whey.","Recheie a panqueca e dobre ou enrole.","Finalize com o chocolate derretido por cima e sirva."],
+  dica:"Adicione a água ao whey bem aos poucos para conseguir um recheio cremoso e evitar que fique líquido demais.",
+  substituicoes:[{de:"Iogurte natural", para:"iogurte grego"},{de:"Whey sabor chocolate branco", para:"outro sabor de sua preferência"}],
+  vontade:"doce"
+},
+
+/* ---------------- 🍽️ ALMOÇO E JANTA (17) ---------------- */
+{
+  id:12, nome:"Enrolado de Frango Recheado", categoria:"almoco-janta",
+  tempo:60, tempoTexto:"60 minutos", dificuldade:"Fácil", porcoes:2, porcoesTexto:"2 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/ENROLADO DE FRANGO RECHEADO/ENROLADO DE FRANGO RECHEADO.png",
+  macros:{calorias:339, proteina:33.0, carbs:10.3, gordura:19.2, fibras:3.0},
+  ingredientes:["frango","espinafre","queijo feta","tomate seco","cebola","alho","azeite"],
+  ingredientesTexto:["2 filés de peito de frango, aproximadamente 240 g no total","Sal a gosto","Pimenta a gosto","Páprica defumada a gosto","Palitos de dente para prender","150 g de espinafre fresco picado","75 g de queijo feta esfarelado","30 g de tomates secos, opcional","50 g de cebola picada","6 g de alho picado","10 g de azeite","Sal a gosto (recheio)","Pimenta a gosto (recheio)"],
+  modoPreparo:["Preaqueça o forno a 190 °C.","Aqueça o azeite em uma frigideira. Adicione a cebola e o alho e refogue até a cebola ficar translúcida.","Acrescente o espinafre picado e cozinhe até murchar. Retire do fogo e deixe esfriar levemente.","Em uma tigela, misture o espinafre refogado, o queijo feta e os tomates secos, se utilizar. Tempere com sal e pimenta a gosto.","Coloque os filés de frango sobre uma tábua e bata cuidadosamente até obter uma espessura uniforme.","Tempere os filés com sal, pimenta e páprica defumada a gosto.","Distribua o recheio sobre os filés de frango.","Enrole firmemente e prenda com palitos de dente.","Disponha os enrolados em uma assadeira com a abertura voltada para baixo.","Leve ao forno preaquecido a 190 °C por aproximadamente 45 minutos, ou até o frango estar completamente cozido e dourado."],
+  dica:"Prenda bem os palitos e mantenha a abertura voltada para baixo na assadeira — isso evita que o recheio escape durante o forno.",
+  substituicoes:[],
+  vontade:"substancioso"
+},
+{
+  id:13, nome:"Escondidinho de Carne Moída com Purê de Batata", categoria:"almoco-janta",
+  tempo:60, tempoTexto:"60 minutos", dificuldade:"Fácil", porcoes:6, porcoesTexto:"6 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/ESCONDIDINHO DE CARNE MOÍDA COM PURÊ DE BATATA/ESCONDIDINHO DE CARNE MOÍDA COM PURÊ DE BATATA.png",
+  macros:{calorias:300, proteina:25.1, carbs:22.0, gordura:12.3, fibras:2.5},
+  ingredientes:["carne moída","cebola","alho","tomate","batata","manteiga","leite integral","queijo minas","parmesão"],
+  ingredientesTexto:["500 g de patinho moído","1 cebola média picada","2 dentes de alho picados","1 pimenta dedo-de-moça picada e sem sementes, opcional","2 tomates maduros picados","1/2 xícara (120 ml) de passata de tomate","1 colher de sopa de azeite","Sal a gosto","Pimenta-do-reino a gosto","600 g de batata inglesa","1 colher de sopa de manteiga","1/2 xícara (120 ml) de leite integral","Sal a gosto (purê)","Noz-moscada a gosto","60 g de queijo Minas ralado","20 g de parmesão ralado"],
+  modoPreparo:["Atenção: modo de preparo não informado no material original. Sugestão: refogue a carne moída com cebola e alho, junte tomate e passata e cozinhe até encorpar; à parte, cozinhe e amasse a batata com manteiga, leite e noz-moscada; monte em camadas de purê, carne e purê, finalize com os queijos e leve ao forno até gratinar."],
+  dica:"Reserve uma parte do queijo Minas e do parmesão para gratinar só na última leva ao forno — o escondidinho fica cremoso por dentro e dourado por cima.",
+  substituicoes:[{de:"Patinho", para:"coxão mole"},{de:"Leite integral", para:"leite vegetal"}],
+  vontade:"substancioso"
+},
+{
+  id:14, nome:"Kebab de Frango", categoria:"almoco-janta",
+  tempo:100, tempoTexto:"1 hora e 40 minutos", dificuldade:"Fácil", porcoes:6, porcoesTexto:"6 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/KEBAB DE FRANGO/KEBAB DE FRANGO.png",
+  macros:{calorias:302, proteina:31.6, carbs:8.7, gordura:15.2, fibras:2.0},
+  ingredientes:["frango","pimentão","cebola","alho","farinha de rosca","salsinha","azeite","páprica","cúrcuma"],
+  ingredientesTexto:["800 g de peito de frango","1 pimentão vermelho","1 pimentão verde","1 cebola","2 dentes de alho","3 colheres de sopa de farinha de rosca","1/2 maço de salsinha picada","1 colher de chá de sal","1 colher de chá de páprica doce ou picante","1/2 colher de chá de pimenta-do-reino","5 colheres de sopa de azeite","1 colher de chá de páprica (azeite temperado)","1/2 colher de chá de cúrcuma (açafrão-da-terra)"],
+  modoPreparo:["Corte o peito de frango em pedaços e processe até obter uma textura semelhante à carne moída.","Processe separadamente os pimentões, a cebola e o alho. Escorra bem o excesso de líquido.","Misture os legumes processados ao frango.","Acrescente a farinha de rosca, a salsinha, o sal, a páprica e a pimenta-do-reino.","Misture bem até formar uma massa homogênea.","Cubra e leve à geladeira por aproximadamente 1 hora.","Espalhe a mistura em uma frigideira ou chapa antiaderente, formando um retângulo. Divida visualmente em 6 partes, fazendo leves marcações entre elas.","Em um recipiente pequeno, misture o azeite, a páprica e a cúrcuma.","Cozinhe o kebab em fogo baixo, pincelando o azeite temperado durante o preparo.","Quando estiver dourado de um lado, vire cuidadosamente e continue pincelando com o azeite temperado.","Cozinhe por aproximadamente 15–20 minutos, ou até o frango estar completamente cozido e dourado dos dois lados.","Sirva ainda quente."],
+  dica:"Deixe a mistura descansar na geladeira o tempo indicado — isso ajuda a massa a firmar e facilita muito na hora de moldar o kebab na chapa.",
+  substituicoes:[{de:"Páprica doce", para:"páprica picante"}],
+  vontade:"substancioso"
+},
+{
+  id:15, nome:"Lasanha de Molho Branco Fit com Brócolis e Carne", categoria:"almoco-janta",
+  tempo:45, tempoTexto:"45 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/ALMOÇO E JANTA/LASANHA DE MOLHO BRANCO FIT COM BRÓCOLIS E CARNE/LASANHA DE MOLHO BRANCO FIT COM BRÓCOLIS E CARNE.png",
+  macros:{calorias:411, proteina:37.6, carbs:44.1, gordura:9.4, fibras:3.0},
+  ingredientes:["massa de lasanha","leite desnatado","carne moída","brócolis","queijo minas","farinha"],
+  ingredientesTexto:["1 folha de massa para lasanha pré-pronta, aproximadamente 40 g","180 g de molho branco fit","80 g de patinho moído","50 g de brócolis","20 g de queijo Minas padrão light","1 L de leite desnatado (molho branco)","20 g de farinha ou amido (molho branco)","Noz-moscada a gosto","Sal a gosto"],
+  modoPreparo:["Prepare o molho branco misturando o leite desnatado com a farinha ou o amido e leve ao fogo, mexendo até engrossar. Tempere com sal e noz-moscada a gosto.","Cozinhe o patinho moído até ficar bem dourado e reserve.","Cozinhe ou cozinhe no vapor o brócolis até ficar macio.","Divida a folha de massa de lasanha em 2 partes.","Em um recipiente individual, faça uma camada com metade da massa, parte do molho branco, aproximadamente 40 g de patinho e parte do brócolis.","Repita as camadas com o restante da massa, do molho, da carne e do brócolis.","Finalize com o queijo Minas padrão light.","Leve ao forno até a lasanha estar aquecida, a massa cozida e o queijo derretido."],
+  dica:"Depois de pronta, conserve na geladeira por até 5 dias. Na hora de aquecer, use a air fryer ou o micro-ondas.",
+  substituicoes:[{de:"Farinha", para:"amido no molho branco"},{de:"Brócolis", para:"cenoura, se desejar"},{de:"Queijo azul", para:"pode ser adicionado ao molho branco para sabor mais intenso"}],
+  vontade:"substancioso"
+},
+{
+  id:16, nome:"Omelete de Frango com Cenoura e Espinafre", categoria:"almoco-janta",
+  tempo:20, tempoTexto:"20 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/ALMOÇO E JANTA/OMELETE DE FRANGO COM CENOURA E ESPINAFRE/OMELETE DE FRANGO COM CENOURA E ESPINAFRE.png",
+  macros:{calorias:305, proteina:33.7, carbs:5.1, gordura:16.0, fibras:1.5},
+  ingredientes:["ovo","cenoura","espinafre","frango desfiado","muçarela"],
+  ingredientesTexto:["2 ovos grandes","30 g de cenoura ralada","30 g de espinafre","50 g de frango desfiado cozido","20 g de queijo muçarela ralado"],
+  modoPreparo:["Em uma tigela, bata os ovos.","Acrescente a cenoura ralada, o espinafre, o frango desfiado e a muçarela.","Misture até os ingredientes ficarem bem distribuídos.","Transfira para um recipiente adequado para air fryer ou forno.","Asse a 180 °C por aproximadamente 15 minutos, ou até a omelete estar firme e levemente dourada."],
+  dica:"Uma opção rápida para quando você quer uma refeição proteica sem complicação.",
+  substituicoes:[{de:"Air fryer", para:"forno"}],
+  vontade:"leve"
+},
+{
+  id:17, nome:"Pizza Proteica com Massa de Frango", categoria:"almoco-janta",
+  tempo:40, tempoTexto:"40 minutos", dificuldade:"Médio", porcoes:4, porcoesTexto:"4 porções (8 fatias)",
+  imagem:"RECEITAS/ALMOÇO E JANTA/PIZZA PROTEICA COM MASSA DE FRANGO/PIZZA PROTEICA COM MASSA DE FRANGO.png",
+  macros:{calorias:390, proteina:46.8, carbs:10.3, gordura:18.8, fibras:2.4},
+  ingredientes:["frango","cebola","páprica","molho de tomate","muçarela","tomate","manjericão","azeite","orégano"],
+  ingredientesTexto:["700 g de peito de frango cru, sem pele e sem osso","1 cebola","1 colher de sopa de páprica defumada","1 colher de sopa rasa de sal","Pimenta-do-reino a gosto","200 g de molho de tomate","150 g de muçarela","1 tomate maduro","10 folhas de manjericão","1 g de orégano","20 g de azeite"],
+  modoPreparo:["Preaqueça o forno a 200 °C.","Corte o peito de frango cru e a cebola em pedaços menores.","Adicione o frango e a cebola ao processador e tempere com a páprica, o sal e a pimenta-do-reino.","Processe até obter uma massa homogênea e pastosa.","Utilize parte do azeite para untar uma forma de pizza de aproximadamente 30 cm de diâmetro.","Transfira a massa de frango para a forma e espalhe uniformemente, evitando deixar o centro muito espesso.","Pré-asse a base a 200 °C por aproximadamente 10 minutos.","Retire do forno e espalhe o molho de tomate sobre a massa.","Distribua a muçarela e o tomate cortado em rodelas.","Acrescente as folhas de manjericão e finalize com o orégano.","Regue com o restante do azeite.","Retorne ao forno a 200 °C por aproximadamente mais 10 minutos, ou até que o frango esteja completamente cozido, o queijo derretido e as bordas levemente douradas.","Retire do forno e aguarde aproximadamente 5 minutos antes de cortar.","Divida em 8 fatias. Cada porção corresponde a 2 fatias."],
+  dica:"Espalhe a massa de frango em uma camada uniforme e evite deixar o centro muito grosso para facilitar o cozimento por igual e deixar a base mais firme.",
+  substituicoes:[],
+  vontade:"substancioso"
+},
+{
+  id:18, nome:"Pizza Quadrada Proteica de Frango", categoria:"almoco-janta",
+  tempo:45, tempoTexto:"45 minutos", dificuldade:"Fácil", porcoes:4, porcoesTexto:"4 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/PIZZA QUADRADA PROTEICA DE FRANGO/PIZZA QUADRADA PROTEICA DE FRANGO.png",
+  macros:{calorias:298, proteina:30.4, carbs:10.8, gordura:14.3, fibras:1.8},
+  ingredientes:["frango","ovo","páprica","chimichurri","milho","requeijão","muçarela","azeite"],
+  ingredientesTexto:["400 g de filé de peito de frango em cubos","1 ovo grande","1 colher de chá de sal","1 colher de chá de páprica defumada","1 colher de chá de chimichurri","5 g de azeite para untar","170 g de milho em conserva drenado","60 g de requeijão cremoso","100 g de muçarela ralada","Orégano a gosto"],
+  modoPreparo:["Preaqueça o forno a 230 °C.","Processe o frango com o ovo, o sal, a páprica defumada e o chimichurri até formar uma massa homogênea.","Unte levemente uma assadeira com o azeite e espalhe a massa de frango, formando uma base uniforme.","Leve ao forno a 230 °C por 20–25 minutos.","Enquanto a base assa, misture o milho com o requeijão e parte da muçarela.","Retire a base do forno e espalhe a mistura de milho por cima.","Finalize com o restante da muçarela e orégano a gosto.","Volte ao forno a 230 °C por mais 5–10 minutos, ou até o queijo derreter.","Corte em 4 porções e sirva."],
+  dica:"Espalhe a massa de frango em uma camada uniforme para que a base asse por igual.",
+  substituicoes:[],
+  vontade:"substancioso"
+},
+{
+  id:19, nome:"Rocambole de Cenoura com Frango", categoria:"almoco-janta",
+  tempo:40, tempoTexto:"40 minutos", dificuldade:"Médio", porcoes:6, porcoesTexto:"6 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/ROCAMBOLE DE CENOURA COM FRANGO/ROCAMBOLE DE CENOURA COM FRANGO.png",
+  macros:{calorias:209, proteina:24.3, carbs:5.2, gordura:10.4, fibras:1.0},
+  ingredientes:["cenoura","ovo","muçarela","frango desfiado","creme de ricota","salsinha","cebolinha"],
+  ingredientesTexto:["2 cenouras médias, aproximadamente 200 g","2 ovos","150 g de queijo muçarela ralado","Sal a gosto","Temperos a gosto","250 g de frango desfiado cozido","200 g de creme de ricota tradicional","Salsinha a gosto","Cebolinha a gosto"],
+  modoPreparo:["Misture as cenouras, os ovos, a muçarela, o sal e os temperos até obter uma mistura homogênea.","Distribua a massa sobre papel antiaderente em uma assadeira.","Leve ao forno preaquecido a 180 °C por aproximadamente 20 minutos.","Em uma tigela, misture o frango desfiado, o creme de ricota, a salsinha e a cebolinha até obter um recheio cremoso.","Retire a massa do forno e distribua o recheio por toda a superfície.","Enrole cuidadosamente, formando o rocambole.","Corte em 6 porções e sirva."],
+  dica:"Use papel antiaderente para facilitar na hora de enrolar e evitar que a massa grude.",
+  substituicoes:[],
+  vontade:"leve"
+},
+{
+  id:20, nome:"Salada Proteica de Atum com Molho Cremoso", categoria:"almoco-janta",
+  tempo:20, tempoTexto:"20 minutos", dificuldade:"Fácil", porcoes:2, porcoesTexto:"2 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/SALADA PROTEICA DE ATUM COM MOLHO CREMOSO/SALADA PROTEICA DE ATUM COM MOLHO CREMOSO.png",
+  macros:{calorias:422, proteina:41.7, carbs:16.9, gordura:21.7, fibras:3.8},
+  ingredientes:["cenoura","cebola roxa","tomate-cereja","ovo de codorna","atum","alface","iogurte natural","azeite","mostarda","alho","parmesão"],
+  ingredientesTexto:["100 g de cenoura ralada","50 g de cebola roxa picada","120 g de tomate-cereja","5 ovos de codorna","240 g de atum em água, drenado","80 g de alface-americana","170 g de iogurte natural","2 colheres de sopa de azeite","2 colheres de sopa de mostarda amarela","1 dente de alho amassado","1 colher de sopa de parmesão ralado","Sal a gosto","Pimenta-do-reino a gosto","Chimichurri a gosto"],
+  modoPreparo:["Em uma tigela grande, misture a cenoura ralada, a cebola roxa, os tomates-cereja, os ovos de codorna, o atum e a alface-americana.","Em outro recipiente, misture o iogurte natural, o azeite, a mostarda, o alho amassado e o parmesão ralado.","Tempere o molho com sal, pimenta-do-reino e chimichurri a gosto.","Misture bem até obter um molho cremoso e homogêneo.","Divida a salada em 2 porções e sirva com o molho."],
+  dica:"Se for preparar com antecedência, mantenha o molho separado e misture apenas na hora de comer para preservar a textura da salada.",
+  substituicoes:[],
+  vontade:"leve"
+},
+{
+  id:21, nome:"Salada Proteica de Frango com Molho de Iogurte e Mostarda", categoria:"almoco-janta",
+  tempo:25, tempoTexto:"25 minutos", dificuldade:"Fácil", porcoes:4, porcoesTexto:"4 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/SALADA PROTEICA DE FRANGO COM MOLHO DE IOGURTE E MOSTARDA/SALADA PROTEICA DE FRANGO COM MOLHO DE IOGURTE E MOSTARDA.png",
+  macros:{calorias:310, proteina:32.8, carbs:18.9, gordura:12.2, fibras:3.0},
+  ingredientes:["alface","tomate-cereja","milho","pepino","cebola roxa","frango desfiado","parmesão","iogurte natural","mostarda","limão","azeite","alho"],
+  ingredientesTexto:["1 alface americana","1 xícara de tomate-cereja","1 lata de milho","1 pepino japonês","1/2 cebola roxa","300 g de frango cozido e desfiado","50 g de parmesão ralado","170 g de iogurte natural integral","1 colher de sopa de mostarda amarela","Suco de 1/2 limão","1 colher de sopa de azeite","1 dente de alho","1/2 colher de café de sal","1 colher de café de parmesão ralado"],
+  modoPreparo:["Higienize a alface, os tomates-cereja, o pepino e a cebola roxa.","Seque bem a alface e rasgue ou corte grosseiramente.","Corte os tomates-cereja ao meio e o pepino em rodelas finas ou meias-luas.","Pique ou fatie finamente a cebola roxa e escorra completamente o milho.","Para o molho, misture o iogurte natural, a mostarda, o suco de limão, o azeite, o alho, o sal e o parmesão até obter uma mistura homogênea e cremosa.","Em uma tigela grande, misture a alface, o tomate-cereja, o milho, o pepino e a cebola.","Acrescente o frango desfiado e misture delicadamente.","Adicione o parmesão ralado.","Para consumo imediato, despeje o molho sobre a salada e misture delicadamente até envolver todos os ingredientes.","Divida em 4 porções."],
+  dica:"Se for preparar a salada com antecedência, mantenha o molho separado e adicione apenas no momento de servir para preservar melhor a textura da alface.",
+  substituicoes:[],
+  vontade:"leve"
+},
+{
+  id:22, nome:"Tabletes de Tilápia com Lemon Pepper e Batata", categoria:"almoco-janta",
+  tempo:95, tempoTexto:"1 hora e 35 minutos", dificuldade:"Fácil", porcoes:4, porcoesTexto:"4 porções de 2 tabletes",
+  imagem:"RECEITAS/ALMOÇO E JANTA/TABLETES DE TILÁPIA COM LEMON PEPPER E BATATA/TABLETES DE TILÁPIA COM LEMON PEPPER E BATATA.png",
+  macros:{calorias:290, proteina:39.8, carbs:13.5, gordura:8.4, fibras:2.9},
+  ingredientes:["tilápia","batata","cenoura","cebolinha","cebola roxa","azeite"],
+  ingredientesTexto:["7 filés de tilápia, aproximadamente 840 g no total","300 g de batata inglesa cozida","1 cenoura média, aproximadamente 100 g","1 xícara de chá de cebolinha picada, aproximadamente 50 g","1 cebola roxa média, aproximadamente 120 g","1 colher de sobremesa rasa de sal marinho","2 colheres de sopa de lemon pepper","1 colher de sopa de azeite de oliva extravirgem"],
+  modoPreparo:["Cozinhe a batata inglesa sem casca até ficar macia. Amasse bem e reserve.","Coloque os filés de tilápia crus no processador e processe rapidamente, apenas até obter uma textura triturada.","Em uma tigela grande, misture a tilápia triturada, a batata amassada, a cenoura, a cebolinha, a cebola roxa, o sal e o lemon pepper.","Misture bem até obter uma massa uniforme.","Coloque a mistura em um saco com fechamento hermético e espalhe com as mãos, formando uma camada uniforme.","Faça marcações na massa para dividir em 8 tabletes.","Leve ao congelador por aproximadamente 1 hora, ou até firmar.","Aqueça uma frigideira e unte com o azeite.","Grelhe os tabletes dos dois lados até ficarem dourados e completamente cozidos.","Sirva ainda quente."],
+  dica:"Se o seu lemon pepper já tiver sal, reduza ou retire o sal adicional da receita.",
+  substituicoes:[],
+  vontade:"salgado"
+},
+{
+  id:23, nome:"Torta de Atum Saudável", categoria:"almoco-janta",
+  tempo:48, tempoTexto:"45–50 minutos", dificuldade:"Fácil", porcoes:8, porcoesTexto:"8 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/TORTA DE ATUM SAUDÁVEL/TORTA DE ATUM SAUDÁVEL.png",
+  macros:{calorias:321, proteina:24.9, carbs:9.5, gordura:21.0, fibras:2.3},
+  ingredientes:["cenoura","atum","cebola roxa","tomate","azeitona","milho","salsinha","ovo","creme de leite","queijo"],
+  ingredientesTexto:["2 cenouras grandes raladas","500 g de atum em água ou azeite","1 cebola roxa pequena picada","2 tomates médios picados","100 g de azeitonas sem caroço picadas","1 lata pequena de milho, opcional","Salsinha a gosto","Sal a gosto","Pimenta a gosto","4 ovos","400 g de creme de leite","100 g de queijo ralado","1 pitada de sal","1 colher de chá de fermento","Queijo ralado a gosto, para finalizar"],
+  modoPreparo:["Em uma tigela, misture as cenouras, o atum, a cebola-roxa, os tomates, as azeitonas, o milho, se utilizar, e a salsinha. Tempere com sal e pimenta a gosto e reserve.","Adicione os ovos, o creme de leite, 100 g de queijo ralado, o sal e o fermento ao liquidificador. Bata até obter uma mistura homogênea.","Despeje metade da massa em uma assadeira untada.","Distribua todo o recheio sobre a massa.","Cubra com o restante da massa.","Finalize com queijo ralado por cima.","Leve ao forno preaquecido a 180 °C por 25–30 minutos, ou até a torta estar assada e levemente dourada."],
+  dica:"Distribua o recheio em uma camada uniforme antes de cobrir com o restante da massa, para a torta assar por igual e não ficar com uma parte mais seca que a outra.",
+  substituicoes:[{de:"Atum em água", para:"atum em azeite"},{de:"Creme de leite", para:"nata"}],
+  vontade:"substancioso"
+},
+{
+  id:24, nome:"Torta de Frango e Tapioca", categoria:"almoco-janta",
+  tempo:35, tempoTexto:"35 minutos", dificuldade:"Fácil", porcoes:6, porcoesTexto:"6 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/TORTA DE FRANGO E TAPIOCA/TORTA DE FRANGO E TAPIOCA.png",
+  macros:{calorias:159, proteina:16.2, carbs:14.1, gordura:4.0, fibras:0.6},
+  ingredientes:["ovo","goma de tapioca","cottage","frango desfiado","milho","cebolinha","fermento"],
+  ingredientesTexto:["3 ovos","100 g de goma de tapioca hidratada","100 g de cottage","200 g de frango desfiado","80 g de milho em conserva, drenado","Cebolinha a gosto","Sal a gosto","1 colher de sopa de fermento"],
+  modoPreparo:["Preaqueça o forno ou a air fryer a 180 °C.","Bata ou amasse o cottage, se necessário, até obter uma textura mais cremosa e uniforme.","Em uma tigela, adicione os ovos, a goma de tapioca hidratada e o cottage. Misture até obter uma base homogênea.","Acrescente o frango desfiado, o milho drenado, a cebolinha e o sal. Misture até distribuir bem os ingredientes.","Adicione o fermento por último e misture delicadamente apenas até incorporar.","Transfira a mistura para uma forma de aproximadamente 20 cm de diâmetro, preferencialmente de silicone. Se utilizar uma forma convencional, forre com papel-manteiga ou unte levemente.","Na air fryer, asse a 180 °C por aproximadamente 20 minutos, ou até que a superfície esteja dourada e o centro firme.","No forno convencional, asse a 180 °C por aproximadamente 20 a 25 minutos, ou até que a superfície esteja dourada e o centro firme.","Retire e deixe descansar por aproximadamente 5 minutos antes de cortar em 6 pedaços."],
+  dica:"Prefira uma forma de silicone ou utilize papel-manteiga para evitar que a torta grude sem precisar adicionar óleo ou azeite.",
+  substituicoes:[{de:"Cottage", para:"requeijão"},{de:"Forno", para:"air fryer"}],
+  vontade:"leve"
+},
+{
+  id:25, nome:"Torta de Tapioca Proteica", categoria:"almoco-janta",
+  tempo:35, tempoTexto:"35 minutos", dificuldade:"Fácil", porcoes:8, porcoesTexto:"8 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/TORTA DE TAPIOCA PROTEICA/TORTA DE TAPIOCA PROTEICA.png",
+  macros:{calorias:196, proteina:21.6, carbs:13.3, gordura:6.3, fibras:0.1},
+  ingredientes:["goma de tapioca","ovo","frango desfiado","muçarela","leite integral","fermento","tempero verde"],
+  ingredientesTexto:["120 g de goma de tapioca hidratada","4 ovos","400 g de frango desfiado","80 g de queijo muçarela","100 ml de leite integral","1 colher de sopa rasa de fermento (15 g)","Tempero verde a gosto","Sal a gosto"],
+  modoPreparo:["Preaqueça o forno a 180 °C.","Em uma tigela, bata os ovos até que as claras e as gemas estejam bem misturadas.","Acrescente o leite integral e a goma de tapioca hidratada. Misture até obter uma massa uniforme.","Adicione o frango desfiado, a muçarela picada ou ralada, o tempero verde e o sal. Misture até distribuir bem os ingredientes.","Acrescente o fermento por último e misture delicadamente apenas até incorporar.","Transfira a mistura para uma forma média previamente untada ou forrada com papel-manteiga e espalhe uniformemente.","Asse a 180 °C por aproximadamente 20 minutos, ou até que o centro esteja firme e a superfície levemente dourada.","Retire do forno e deixe descansar por aproximadamente 5 minutos antes de cortar.","Divida a torta em 8 pedaços."],
+  dica:"Para deixar a torta mais cremosa, você pode acrescentar requeijão light ou creme de ricota junto ao frango. Lembre-se de que essa adição altera os macronutrientes da receita.",
+  substituicoes:[],
+  vontade:"salgado"
+},
+{
+  id:26, nome:"Torta Fina Proteica de Frango", categoria:"almoco-janta",
+  tempo:27, tempoTexto:"25 minutos na air fryer ou 30 minutos no forno", dificuldade:"Fácil", porcoes:2, porcoesTexto:"2 porções",
+  imagem:"RECEITAS/ALMOÇO E JANTA/TORTA FINA PROTEICA DE FRANGO/TORTA FINA PROTEICA DE FRANGO.png",
+  macros:{calorias:433, proteina:27.9, carbs:21.9, gordura:26.4, fibras:4.1},
+  ingredientes:["ovo","azeite","farelo de aveia","leite integral","frango desfiado","cebola roxa","pimentão","milho","muçarela"],
+  ingredientesTexto:["2 ovos grandes","2 colheres de sopa de azeite","40 g de farelo de aveia","100 ml de leite integral","Sal a gosto","80 g de frango cozido e desfiado","30 g de cebola roxa picada","40 g de pimentões coloridos picados","30 g de milho-verde","30 g de muçarela ralada"],
+  modoPreparo:["Em uma tigela, misture os ovos, o azeite, o farelo de aveia, o leite e o sal até obter uma massa homogênea.","Acrescente o frango desfiado, a cebola roxa, os pimentões, o milho-verde e a muçarela.","Misture bem para distribuir os ingredientes.","Transfira para um recipiente adequado para air fryer ou forno.","Na air fryer, asse a 200 °C por aproximadamente 15 minutos.","No forno, asse a 200 °C por aproximadamente 20 minutos.","Retire quando a torta estiver firme e levemente dourada.","Divida em 2 porções e sirva."],
+  dica:"Na air fryer ela fica pronta mais rápido; retire assim que o centro estiver firme para não ressecar.",
+  substituicoes:[{de:"Farelo de aveia", para:"farinha"},{de:"Air fryer", para:"forno"}],
+  vontade:"substancioso"
+},
+{
+  id:27, nome:"Escondidinho de Patinho com Molho Branco", categoria:"almoco-janta",
+  tempo:30, tempoTexto:"30 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/MARMITAS/ESCONDIDINHO DE PATINHO COM MOLHO BRANCO/ESCONDIDINHO DE PATINHO COM MOLHO BRANCO.png",
+  macros:{calorias:355, proteina:38.4, carbs:27.6, gordura:10.2, fibras:2.5},
+  ingredientes:["batata","carne moída","leite desnatado","creme de ricota","muçarela","amido de milho"],
+  ingredientesTexto:["180 g de batata inglesa cozida","100 g de patinho moído cozido","100 g de molho branco saudável","20 g de muçarela light","Sal a gosto","Pimenta-do-reino a gosto","Molho de tomate a gosto, opcional","500 ml de leite desnatado (molho branco)","40 g de creme de ricota light","10 g de amido de milho","Sal a gosto (molho branco)"],
+  modoPreparo:["Em uma panela ainda fora do fogo, adicione o leite desnatado e dissolva completamente o amido de milho.","Acrescente o creme de ricota light e tempere com sal.","Leve ao fogo médio-baixo, mexendo continuamente até o molho engrossar e adquirir consistência cremosa.","Retire do fogo e reserve.","Preaqueça o forno a 200 °C.","Amasse a batata cozida ainda morna até formar um purê. Tempere com sal e pimenta-do-reino a gosto.","Se desejar, misture molho de tomate ao patinho já cozido.","Em um refratário individual próprio para forno, espalhe metade da batata no fundo.","Distribua o patinho sobre a primeira camada de batata.","Acrescente 100 g do molho branco.","Distribua 10 g de muçarela light sobre o recheio.","Cubra com o restante da batata e espalhe até formar uma camada uniforme.","Finalize com os outros 10 g de muçarela light.","Asse por aproximadamente 10–15 minutos, ou até que esteja completamente aquecido e o queijo derretido e levemente dourado."],
+  dica:"Divida a muçarela em duas partes: utilize metade no recheio e metade na cobertura para deixar o escondidinho cremoso por dentro e gratinado por cima.",
+  substituicoes:[],
+  vontade:"substancioso"
+},
+{
+  id:28, nome:"Estrogonofe de Frango com Batatas e Abobrinha", categoria:"almoco-janta",
+  tempo:60, tempoTexto:"60 minutos", dificuldade:"Fácil", porcoes:8, porcoesTexto:"8 marmitas pequenas",
+  imagem:"RECEITAS/MARMITAS/ESTROGONOFE DE FRANGO COM BATATAS E ABOBRINHA/ESTROGONOFE DE FRANGO COM BATATAS E ABOBRINHA.png",
+  macros:{calorias:290, proteina:32.5, carbs:31.1, gordura:4.8, fibras:4.8},
+  ingredientes:["frango","cebola","alho","milho","molho de tomate","creme de ricota","batata","abobrinha","páprica"],
+  ingredientesTexto:["1 kg de peito de frango","2 cebolas médias picadas","2 dentes de alho picados","1 lata de milho, aproximadamente 170 g drenados","1 sachê de molho de tomate, aproximadamente 300 g","1 pote de creme de ricota light, aproximadamente 150 g","Cebolinha a gosto","Sal a gosto","Pimenta a gosto","Páprica a gosto","Lemon pepper a gosto","3 batatas grandes, aproximadamente 900 g","Páprica a gosto (batatas)","Sal a gosto (batatas)","Pimenta a gosto (batatas)","Chimichurri a gosto","3 abobrinhas médias, aproximadamente 900 g","Sal a gosto (abobrinha)","Pimenta a gosto (abobrinha)","Açafrão a gosto"],
+  modoPreparo:["Atenção: modo de preparo completo não informado no material original. A fonte indica apenas que as batatas são preparadas na air fryer e que o estrogonofe é servido com as batatas e a abobrinha.","Sugestão: refogue o frango em cubos com cebola e alho, junte o milho, o molho de tomate e o creme de ricota e cozinhe até encorpar; tempere as batatas e leve à air fryer; refogue a abobrinha com açafrão; sirva tudo junto em marmitas."],
+  dica:"Espere a comida esfriar antes de tampar as marmitas.",
+  substituicoes:[{de:"Batatas e abobrinha", para:"arroz como acompanhamento"},{de:"Temperos", para:"ajuste livre conforme sua preferência"}],
+  vontade:"substancioso"
+},
+
+/* ---------------- 🍰 SOBREMESAS (7) ---------------- */
+{
+  id:29, nome:"Bolo de Banana com Aveia e Doce de Leite", categoria:"sobremesas",
+  tempo:50, tempoTexto:"aproximadamente 50 minutos", dificuldade:"Fácil", porcoes:16, porcoesTexto:"16 fatias",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/BOLO DE BANANA COM AVEIA E DOCE DE LEITE/BOLO DE BANANA COM AVEIA E DOCE DE LEITE.png",
+  macros:{calorias:190, proteina:6.6, carbs:32.6, gordura:4.4, fibras:3.8},
+  ingredientes:["banana","ovo","aveia","farinha de aveia","canela","fermento","doce de leite","manteiga"],
+  ingredientesTexto:["6 bananas grandes para a massa, aproximadamente 720 g","1 banana grande para a cobertura, aproximadamente 120 g","130 g de aveia em flocos","240 g de farinha de aveia","5 ovos médios","2 colheres de sopa de canela em pó na massa","120 g de doce de leite","1 colher de sopa de fermento químico","5 g de manteiga para untar","Canela em pó a gosto para finalizar"],
+  modoPreparo:["Preaqueça o forno a 200 °C.","Unte uma forma média/grande com aproximadamente 5 g de manteiga. Se preferir evitar a gordura adicional, utilize papel-manteiga.","Descasque as 6 bananas da massa e amasse bem com um garfo até formar um purê.","Acrescente os 5 ovos e misture bem até que estejam completamente incorporados às bananas.","Adicione os 130 g de aveia em flocos, os 240 g de farinha de aveia e aproximadamente 16 g de canela em pó.","Misture até obter uma massa uniforme e espessa.","Acrescente os 12 g de fermento químico por último e incorpore delicadamente.","Transfira a massa para a forma preparada e nivele a superfície.","Distribua aproximadamente 120 g de doce de leite em pequenas porções sobre a superfície, sem misturar completamente à massa.","Corte a banana restante em rodelas e distribua sobre o bolo.","Finalize com aproximadamente 2 g de canela em pó.","Leve ao forno preaquecido a 200 °C por aproximadamente 35 minutos.","Verifique o ponto no centro do bolo com um palito — regiões com doce de leite permanecerão naturalmente mais úmidas.","Retire do forno e deixe descansar por aproximadamente 10 minutos antes de cortar.","Divida em 16 fatias de tamanhos semelhantes."],
+  dica:"Faça o teste do palito no centro do bolo — nas partes com doce de leite ele vai sair naturalmente mais úmido, então avalie pelo restante da massa.",
+  substituicoes:[{de:"Doce de leite (120 g na receita)", para:"pode omitir; sem ele, cada fatia cai de ~190 kcal para ~167 kcal"}],
+  vontade:"doce"
+},
+{
+  id:30, nome:"Bolo Proteico de Chocolate", categoria:"sobremesas",
+  tempo:7, tempoTexto:"7 minutos", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/BOLO PROTEICO DE CHOCOLATE/BOLO PROTEICO DE CHOCOLATE.png",
+  macros:{calorias:423, proteina:32.6, carbs:46.7, gordura:22.7, fibras:23.4},
+  ingredientes:["ovo","iogurte grego","farinha de coco","cacau em pó","adoçante","fermento"],
+  ingredientesTexto:["1 ovo grande","90 g de iogurte grego natural sem açúcar","25 g de farinha de coco","20 g de cacau em pó 100%","15 g de adoçante não calórico","1 colher de chá de fermento químico","90 g de iogurte grego natural sem açúcar (cobertura)","20 g de cacau em pó 100% (cobertura)","10 g de adoçante não calórico (cobertura)"],
+  modoPreparo:["Em um recipiente próprio para micro-ondas, misture o ovo, o iogurte grego, a farinha de coco, o cacau em pó, o adoçante e o fermento até obter uma massa homogênea.","Leve ao micro-ondas por aproximadamente 2 minutos e 30 segundos, ou até atingir o ponto desejado.","Para a cobertura, misture o iogurte grego, o cacau em pó e o adoçante até obter um creme homogêneo.","Espalhe a cobertura sobre o bolo.","Sirva em seguida ou leve à geladeira antes de consumir."],
+  dica:"Gelado fica ainda melhor!",
+  substituicoes:[],
+  vontade:"doce"
+},
+{
+  id:31, nome:"Brigadeiro Fit de Café", categoria:"sobremesas",
+  tempo:30, tempoTexto:"30 minutos", dificuldade:"Fácil", porcoes:10, porcoesTexto:"10 unidades",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/BRIGADEIRO FIT DE CAFÉ/BRIGADEIRO FIT DE CAFÉ.png",
+  macros:{calorias:38, proteina:1.8, carbs:3.8, gordura:1.7, fibras:0.3},
+  ingredientes:["leite em pó","chocolate em pó","café","cacau em pó"],
+  ingredientesTexto:["5 colheres de sopa de leite em pó integral (62,5 g)","2 colheres de sopa de chocolate em pó 50% cacau (20 g)","20–25 ml de café coado forte ou espresso, sem açúcar","Cacau em pó 100% a gosto, opcional, para finalizar"],
+  modoPreparo:["Em uma tigela, misture o leite em pó integral com o chocolate em pó 50% cacau.","Prepare o café e utilize-o ainda bem quente.","Acrescente inicialmente cerca de 20 ml de café à mistura, aos poucos, mexendo vigorosamente a cada adição.","Continue misturando até obter um creme espesso e uniforme.","Se necessário, acrescente o restante do café gradualmente, até aproximadamente 25 ml no total. A massa deve ficar cremosa e densa, sem ficar líquida.","Leve à geladeira por aproximadamente 20 minutos para firmar.","Umedeça levemente as mãos com água e divida a massa em 10 porções.","Modele os brigadeiros e, se desejar, finalize com uma pequena quantidade de cacau em pó."],
+  dica:"Adicione o café aos poucos. Comece com cerca de 20 ml e só acrescente mais se necessário, porque o excesso de líquido pode deixar a massa mole demais para enrolar.",
+  substituicoes:[],
+  vontade:"doce"
+},
+{
+  id:32, nome:"Brownie Proteico", categoria:"sobremesas",
+  tempo:20, tempoTexto:"20 minutos", dificuldade:"Fácil", porcoes:4, porcoesTexto:"4 pedaços",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/BROWNIE PROTEICO/BROWNIE PROTEICO.png",
+  macros:{calorias:167, proteina:9.5, carbs:8.0, gordura:11.0, fibras:1.6},
+  ingredientes:["ovo","chocolate em pó","whey protein","farinha de aveia","manteiga","chocolate 70%"],
+  ingredientesTexto:["2 ovos","2 colheres de sopa de chocolate em pó 50% cacau (20 g)","1 scoop de whey protein (30 g)","1 colher de sopa de farinha de aveia (10 g)","2 colheres de sopa de manteiga sem sal (28,4 g)","15 g de chocolate 70% picado"],
+  modoPreparo:["Preaqueça o forno a 180 °C. Para preparar na air fryer, preaqueça a 160 °C por aproximadamente 3 minutos, se o aparelho permitir.","Forre um refratário pequeno com papel-manteiga ou utilize uma forma antiaderente compatível com o forno ou a air fryer.","Em uma tigela, bata bem os ovos até ficarem homogêneos.","Acrescente o chocolate em pó, o whey protein e a farinha de aveia.","Adicione a manteiga previamente derretida e misture até obter uma massa cremosa, espessa e uniforme.","Transfira a massa para o refratário e nivele suavemente.","Distribua o chocolate 70% picado sobre a superfície.","Asse no forno a 180 °C por 10 a 15 minutos ou na air fryer a 160 °C pelo mesmo período.","Comece a verificar o ponto a partir de 10 minutos. Retire quando as bordas estiverem firmes e o centro ainda estiver úmido.","Deixe descansar por aproximadamente 5 minutos e corte em 4 pedaços."],
+  dica:"Não deixe o brownie assar demais. Retire enquanto o centro ainda estiver levemente úmido para manter a textura macia e intensa de brownie.",
+  substituicoes:[{de:"Manteiga", para:"óleo de coco"},{de:"Forno", para:"air fryer"}],
+  vontade:"doce"
+},
+{
+  id:33, nome:"Mousse de Maracujá", categoria:"sobremesas",
+  tempo:188, tempoTexto:"3 horas e 8 minutos", dificuldade:"Fácil", porcoes:2, porcoesTexto:"2 porções",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/MOUSSE DE MARACUJÁ/MOUSSE DE MARACUJÁ.png",
+  macros:{calorias:118, proteina:9.0, carbs:14.6, gordura:2.7, fibras:0.3},
+  ingredientes:["maracujá","iogurte natural","leite em pó","adoçante"],
+  ingredientesTexto:["1 maracujá médio (aproximadamente 45 g de polpa com sementes)","170 ml de iogurte natural","3 colheres de sopa de leite em pó desnatado (30 g)","Adoçante a gosto, opcional"],
+  modoPreparo:["Corte o maracujá ao meio e retire a polpa com as sementes.","Coloque a polpa do maracujá, o iogurte natural e o leite em pó desnatado no liquidificador, processador ou recipiente alto para mixer.","Bata por aproximadamente 30 a 60 segundos, até obter um creme uniforme.","Se desejar, acrescente adoçante a gosto e bata rapidamente novamente.","Distribua o creme em 2 potinhos.","Leve à geladeira por aproximadamente 3 horas.","Sirva gelado."],
+  dica:"Para manter a receita com a quantidade total de polpa e fibras calculadas, bata o maracujá com as sementes. Se preferir uma textura completamente lisa, você pode coar a polpa antes do preparo.",
+  substituicoes:[{de:"Leite em pó desnatado", para:"whey protein de sabor neutro para uma versão mais proteica"}],
+  vontade:"doce"
+},
+{
+  id:34, nome:"Pudim Fit", categoria:"sobremesas",
+  tempo:180, tempoTexto:"3 horas", dificuldade:"Fácil", porcoes:1, porcoesTexto:"1 porção",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/PUDIM FIT/PUDIM FIT.png",
+  macros:{calorias:236, proteina:19.0, carbs:23.3, gordura:7.0, fibras:0.0},
+  ingredientes:["ovo","leite em pó","leite integral","stevia","doce de leite"],
+  ingredientesTexto:["1 ovo","30 g de leite em pó desnatado","40 ml de leite integral","Stevia a gosto","10 g de doce de leite"],
+  modoPreparo:["Preaqueça o forno a 180 °C.","Aqueça água suficiente para preparar o banho-maria.","Em uma tigela, misture delicadamente o ovo com um fouet ou garfo.","Acrescente o leite em pó desnatado, o leite integral e a stevia. Misture até obter uma preparação homogênea.","Espalhe o doce de leite no fundo e nas laterais inferiores de um refratário pequeno próprio para forno.","Despeje a mistura do pudim no refratário.","Coloque o refratário dentro de uma assadeira maior e adicione água quente até aproximadamente metade de sua altura.","Asse em banho-maria a 180 °C por aproximadamente 35–45 minutos, ou até que as bordas estejam firmes e o centro ainda apresente leve oscilação.","Retire cuidadosamente do banho-maria e deixe esfriar por aproximadamente 20–30 minutos.","Leve à geladeira por pelo menos 2 horas antes de servir."],
+  dica:"Deixe o pudim esfriar antes de levá-lo à geladeira e mantenha refrigerado por pelo menos 2 horas antes de servir.",
+  substituicoes:[],
+  vontade:"doce"
+},
+{
+  id:35, nome:"Pudim Fit com Doce de Leite", categoria:"sobremesas",
+  tempo:90, tempoTexto:"1 hora e 30 minutos", dificuldade:"Fácil", porcoes:4, porcoesTexto:"4 porções",
+  imagem:"RECEITAS/LANCHE E SOBREMESA/PUDIM FIT COM DOCE DE LEITE/PUDIM FIT COM DOCE DE LEITE.png",
+  macros:{calorias:141, proteina:8.0, carbs:18.6, gordura:3.9, fibras:0.0},
+  ingredientes:["ovo","leite em pó","leite desnatado","doce de leite"],
+  ingredientesTexto:["2 ovos","2 colheres de sopa de leite em pó desnatado (20 g)","300 ml de leite desnatado","80 g de doce de leite (20 g por unidade)"],
+  modoPreparo:["Em uma tigela, bata os ovos com um fouet ou garfo apenas até as claras e as gemas ficarem completamente misturadas.","Acrescente o leite em pó desnatado e misture até dissolver.","Adicione o leite desnatado aos poucos e misture até obter uma preparação uniforme.","Divida a mistura entre 4 copos ou ramequins resistentes ao calor, colocando aproximadamente 105 ml em cada recipiente.","Disponha os recipientes dentro de uma panela larga.","Adicione água quente até atingir aproximadamente metade da altura externa dos recipientes, sem deixar água entrar nos pudins.","Tampe a panela e cozinhe em fogo baixo por aproximadamente 20 minutos, mantendo a água em fervura suave.","Verifique o ponto: as bordas devem estar firmes e o centro pode apresentar uma leve tremulação.","Retire cuidadosamente os recipientes do banho-maria e deixe amornar.","Leve à geladeira por pelo menos 1 hora, até os pudins ficarem frios e firmes.","Na hora de servir, finalize cada unidade com 20 g de doce de leite."],
+  dica:"Mantenha o fogo baixo e a água do banho-maria em fervura bem suave. Isso ajuda o pudim a cozinhar delicadamente e ficar com uma textura mais uniforme.",
+  substituicoes:[],
+  vontade:"doce"
+}
+
+]; /* fim de RECEITAS */
+
+/* ============================================================
+   PARTE 2 — GLOSSÁRIO E BANCO DE SUBSTITUIÇÕES
+   ============================================================ */
+const GLOSSARIO = [
+  {termo:"Amido de milho", texto:"O engrossador mais neutro que existe. Um pouco vira molho branco cremoso sem precisar de farinha nem de gordura extra."},
+  {termo:"Cacau em pó 100%", texto:"Chocolate sem enrolação: só o cacau, sem açúcar escondido. É o que dá gosto de doce de verdade nos brigadeiros e bolos daqui."},
+  {termo:"Chimichurri", texto:"Mistura de temperos verdes que transforma frango, batata e tilápia sem grama extra de nada. Uso e abuso."},
+  {termo:"Cottage", texto:"Mais proteína que queijo comum, menos gordura. Bate no liquidificador e vira creme — usei em tortas e no wrap."},
+  {termo:"Cream cheese", texto:"Cremoso, mas pesado nos macronutrientes. Troco por iogurte grego sempre que a receita permite e ninguém percebe a diferença."},
+  {termo:"Creme de ricota light", texto:"O parceiro de molhos brancos e recheios cremosos aqui do e-book. Rende textura de nata gastando menos gordura."},
+  {termo:"Doce de leite", texto:"Uso com moderação e sempre pesado — ele é gostoso, mas é o ingrediente que mais pesa a mão nos macronutrientes. Vale cada grama."},
+  {termo:"Eritritol / adoçante não calórico", texto:"Adoçante com textura de açúcar, sem o amargo de outros adoçantes. Uso 1:1 no lugar do açúcar nas sobremesas."},
+  {termo:"Farelo de aveia", texto:"Mais fibra e menos carboidrato líquido que a farinha de aveia. Se ficar grosso demais, bata rapidinho no liquidificador."},
+  {termo:"Farinha de coco", texto:"Absorve muito líquido, então um pouco já basta. Uso em bolos rápidos de micro-ondas para dar estrutura sem pesar."},
+  {termo:"Fermento químico em pó", texto:"O segredo dos pães e bolos proteicos daqui crescerem sem farinha de trigo. Sempre por último na massa, misturado com carinho."},
+  {termo:"Goma de tapioca", texto:"A base de muitas receitas daqui. Não é farinha, não engorda mais que farinha, e deixa a textura perfeita em crepiocas e tortas."},
+  {termo:"Iogurte grego", texto:"O coringa proteico. Substitui creme de leite, cream cheese e ainda entrega proteína. Use sempre sem açúcar."},
+  {termo:"Iogurte natural integral", texto:"Base de quase todo molho cremoso deste e-book. Mais suave que o grego, ótimo para saladas e mousses."},
+  {termo:"Lemon pepper", texto:"Limão e pimenta em um tempero só. Uma pitada resolve peixe e frango sem precisar de mais nada."},
+  {termo:"Páprica defumada", texto:"Dá gosto de churrasco sem precisar de churrasco. Uso em massas de frango para não ficar com cara de comida sem graça."},
+  {termo:"Requeijão light", texto:"Cremosidade de molho sem a bomba calórica do requeijão tradicional. Perfeito para finalizar panquecas e pizzas."},
+  {termo:"Stevia", texto:"Adoçante natural, sem calorias, sem sabor residual amargo quando usado na quantidade certa. Vai bem em pudins."},
+  {termo:"Whey protein", texto:"Opcional na maioria das receitas, mas quando uso prefiro sabor neutro ou baunilha fraca — some no sabor, mas não na proteína."}
+];
+
+const SUBSTITUICOES_DICT = {
+  "cream cheese": { substituto:"iogurte grego", impacto:"Proteína +4 g, Gordura −8 g por 100 g" },
+  "leite integral": { substituto:"leite desnatado ou bebida vegetal", impacto:"Calorias −30 kcal por 200 ml" },
+  "farinha de trigo": { substituto:"farinha de aveia", impacto:"Fibras +3 g, índice glicêmico menor" },
+  "açúcar": { substituto:"eritritol ou xilitol", impacto:"Calorias −60 kcal por colher" },
+  "manteiga": { substituto:"óleo de coco ou azeite", impacto:"Gordura saturada menor" },
+  "ovo inteiro": { substituto:"2 claras", impacto:"Gordura −5 g, Proteína mantida" },
+  "creme de leite": { substituto:"iogurte grego ou cottage batido", impacto:"Proteína +6 g, Gordura −10 g" },
+  "queijo prato": { substituto:"queijo cottage ou ricota", impacto:"Gordura −8 g por 30 g" },
+  "doce de leite": { substituto:"pasta de amendoim com mel", impacto:"Proteína +4 g" },
+  "goma de tapioca": { substituto:"farinha de aveia fina", impacto:"Fibras +2 g por colher" },
+  "banana": { substituto:"maçã ou pera amassada", impacto:"Carboidratos similares" },
+  "iogurte natural": { substituto:"iogurte grego sem açúcar", impacto:"Proteína +5 g por 100 g" },
+  "frango desfiado": { substituto:"atum em água escorrido", impacto:"Proteína similar, mais prático" },
+  "carne moída": { substituto:"frango moído ou patinho moído", impacto:"Gordura −4 g por 100 g" }
+};
+
+/* ============================================================
+   PARTE 3 — FUNÇÕES UTILITÁRIAS
+   ============================================================ */
+function normalizar(str){
+  return (str||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').trim();
+}
+
+const CATEGORIAS_INFO = {
+  "cafe-lanches": { label:"Café & Lanches" },
+  "almoco-janta": { label:"Almoço e Janta" },
+  "sobremesas": { label:"Sobremesas" }
+};
+
+// mapeia uma tag de ingrediente livre para o vocabulário fixo da "geladeira" (Sistema 3)
+function paraVocabularioGeladeira(tagOriginal){
+  const t = normalizar(tagOriginal);
+  if(t.includes('frango')) return 'Frango';
+  if(t.includes('atum')) return 'Atum';
+  if(t.includes('tilapia')) return 'Tilápia';
+  if(t.includes('carne moida') || t.includes('patinho')) return 'Carne moída';
+  if(t.includes('ovo')) return 'Ovo';
+  if(t.includes('cottage')) return 'Cottage';
+  if(t.includes('iogurte grego')) return 'Iogurte grego';
+  if(t.includes('iogurte natural')) return 'Iogurte natural';
+  if(t.includes('tapioca')) return 'Tapioca';
+  if(t.includes('aveia')) return 'Aveia';
+  if(t.includes('batata-doce') || t.includes('batata doce')) return 'Batata-doce';
+  if(t.includes('banana')) return 'Banana';
+  if(t.includes('batata')) return 'Batata';
+  if(t.includes('cream cheese')) return 'Cream cheese';
+  if(t.includes('queijo') || t.includes('mucarela') || t.includes('parmesao') || t.includes('ricota') || t.includes('feta') || t.includes('requeijao')) return 'Queijo';
+  if(t.includes('leite')) return 'Leite';
+  if(t.includes('azeite')) return 'Azeite';
+  if(t.includes('alho')) return 'Alho';
+  if(t.includes('cebola')) return 'Cebola';
+  if(t.includes('brocolis')) return 'Brócolis';
+  if(t.includes('cenoura')) return 'Cenoura';
+  if(t.includes('espinafre')) return 'Espinafre';
+  if(t.includes('tempero') || t.includes('sal') || t.includes('pimenta') || t.includes('paprica') || t.includes('oregano')) return 'Temperos básicos';
+  return null;
+}
+
+// classifica uma tag de ingrediente em uma das 5 categorias da lista de compras
+function paraCategoriaCompras(tagOriginal){
+  const t = normalizar(tagOriginal);
+  if(/(frango|atum|tilapia|carne moida|patinho|ovo|whey)/.test(t)) return 'Proteínas';
+  if(/(queijo|mucarela|parmesao|ricota|feta|requeijao|leite|cream cheese|manteiga|iogurte|cottage)/.test(t)) return 'Laticínios';
+  if(/(tapioca|aveia|batata|milho|farinha|amido|wrap|massa)/.test(t)) return 'Carboidratos e Grãos';
+  if(/(cenoura|brocolis|espinafre|cebola|tomate|alface|pepino|banana|maracuja|morango|abobrinha|pimentao|azeitona|salsinha|cebolinha|manjericao)/.test(t)) return 'Vegetais e Frutas';
+  return 'Temperos e Extras';
+}
+
+// calcula tags de restrição alimentar a partir do texto de ingredientes
+function computarRestricoes(receita){
+  const texto = normalizar(receita.ingredientesTexto.join(' '));
+  const temGluten = /(farinha de rosca|massa para lasanha|massa de lasanha|wrap integral|farinha de trigo)/.test(texto);
+  const temLactose = /(leite|queijo|mucarela|parmesao|ricota|requeijao|manteiga|cream cheese|iogurte|doce de leite|cottage)/.test(texto);
+  const temPeixe = /(atum|tilapia)/.test(texto);
+  receita.semGluten = !temGluten;
+  receita.semLactose = !temLactose;
+  receita.semPeixe = !temPeixe;
+}
+
+// prepara os dados computados de cada receita (roda uma vez, no carregamento)
+function prepararReceitas(){
+  RECEITAS.forEach(r=>{
+    computarRestricoes(r);
+    r.geladeiraTags = [...new Set(r.ingredientes.map(paraVocabularioGeladeira).filter(Boolean))];
+    r.tagsDisplay = [];
+    const rotuloVontade = { doce:'Doce', salgado:'Salgado', leve:'Leve', substancioso:'Substancioso' };
+    if(rotuloVontade[r.vontade]) r.tagsDisplay.push(rotuloVontade[r.vontade]);
+    if(r.semGluten) r.tagsDisplay.push('Sem Glúten');
+    if(r.semLactose) r.tagsDisplay.push('Sem Lactose');
+  });
+}
+prepararReceitas();
+
+// banco global de substituições: dicionário fixo + substituições extraídas de cada receita
+function montarBancoSubstituicoes(){
+  const banco = {};
+  Object.keys(SUBSTITUICOES_DICT).forEach(chave=>{
+    banco[chave] = { substituto:SUBSTITUICOES_DICT[chave].substituto, impacto:SUBSTITUICOES_DICT[chave].impacto };
+  });
+  RECEITAS.forEach(r=>{
+    r.substituicoes.forEach(s=>{
+      const chave = normalizar(s.de);
+      if(!banco[chave]){
+        banco[chave] = { substituto:s.para, impacto:`Sugestão usada na receita "${r.nome}": substitua por ${s.para}.` };
+      }
+    });
+  });
+  return banco;
+}
+const BANCO_SUBSTITUICOES = montarBancoSubstituicoes();
+
+// lista de ingredientes para autocomplete do Sistema 2 (dicionário + tags de todas as receitas)
+function montarListaIngredientes(){
+  const set = new Set(Object.keys(SUBSTITUICOES_DICT));
+  RECEITAS.forEach(r=> r.ingredientes.forEach(i=> set.add(normalizar(i))));
+  return [...set].sort();
+}
+const LISTA_INGREDIENTES = montarListaIngredientes();
+
+// retorna as receitas cujo array `ingredientes` contém o termo buscado
+function receitasComIngrediente(termoNormalizado){
+  return RECEITAS.filter(r=> r.ingredientes.some(i=> normalizar(i).includes(termoNormalizado)));
+}
+
+/* ============================================================
+   PARTE 4 — RENDERIZAÇÃO DE CARDS E MODAL DE RECEITA
+   ============================================================ */
+const CHEVRON_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+
+function cardReceitaHTML(r, comDica){
+  const info = CATEGORIAS_INFO[r.categoria];
+  return `
+  <div class="card-receita" data-id="${r.id}" onclick="abrirModal(${r.id})">
+    <div class="foto-wrap">
+      <img src="${r.imagem}" alt="${r.nome}" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23F0EAE0%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2216%22 fill=%22%238a8275%22 text-anchor=%22middle%22>${encodeURIComponent(r.nome)}</text></svg>';">
+      <span class="badge-categoria">${info.label}</span>
+      ${comDica ? '<span class="hint-toque">Toque para ver a receita</span>' : ''}
+    </div>
+    <div class="conteudo">
+      <h3>${r.nome}</h3>
+      <div class="meta-row"><span>${r.tempoTexto}</span><span>· ${r.dificuldade}</span></div>
+      <div class="macros-mini">
+        <span>Kcal: <b>${r.macros.calorias}</b></span>
+        <span>Prot.: <b>${r.macros.proteina}g</b></span>
+        <span>Carb.: <b>${r.macros.carbs}g</b></span>
+        <span>Gord.: <b>${r.macros.gordura}g</b></span>
+      </div>
+      <div class="ver-btn">Ver Receita Completa ${CHEVRON_SVG}</div>
+    </div>
+  </div>`;
+}
+
+function abrirModal(id){
+  const r = RECEITAS.find(x=>x.id===id);
+  if(!r) return;
+  const info = CATEGORIAS_INFO[r.categoria];
+  document.getElementById('modalFoto').src = r.imagem;
+  document.getElementById('modalFoto').alt = r.nome;
+  document.getElementById('modalFoto').onerror = function(){ this.onerror=null; this.src="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23F0EAE0%22/></svg>"; };
+
+  const ingredientesHTML = r.ingredientesTexto.map((txt,i)=>`<li onclick="this.classList.toggle('marcado')"><span class="caixa">✓</span><span class="texto">${txt}</span></li>`).join('');
+  const preparoHTML = r.modoPreparo.map((passo,i)=>`<li><span class="n">${String(i+1).padStart(2,'0')}</span><span>${passo}</span></li>`).join('');
+  const subHTML = r.substituicoes.length
+    ? `<table class="tabela-sub">${r.substituicoes.map(s=>`<tr><td>${s.de}</td><td class="seta-td">→</td><td>${s.para}</td></tr>`).join('')}</table>`
+    : `<p class="sem-sub">Substituições não informadas para esta receita.</p>`;
+
+  document.getElementById('modalBody').innerHTML = `
+    <h2>${r.nome}</h2>
+    <div class="modal-tags">
+      <span>${info.label}</span>
+      <span>${r.tempoTexto}</span>
+      <span>${r.dificuldade}</span>
+      <span>${r.porcoesTexto}</span>
+    </div>
+    <div class="macros-grid">
+      <div class="macro-card"><div class="valor mono">${r.macros.calorias}</div><div class="rotulo">Calorias</div></div>
+      <div class="macro-card"><div class="valor mono">${r.macros.proteina}g</div><div class="rotulo">Proteína</div></div>
+      <div class="macro-card"><div class="valor mono">${r.macros.carbs}g</div><div class="rotulo">Carboidratos</div></div>
+      <div class="macro-card"><div class="valor mono">${r.macros.gordura}g</div><div class="rotulo">Gordura</div></div>
+    </div>
+    <div class="modal-secao">
+      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Ingredientes</h4>
+      <ul class="lista-ingredientes">${ingredientesHTML}</ul>
+    </div>
+    <div class="modal-secao">
+      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v4M16 3v4"/><rect x="4" y="6" width="16" height="15" rx="2"/><path d="M4 11h16"/></svg>Modo de Preparo</h4>
+      <ul class="lista-preparo">${preparoHTML}</ul>
+    </div>
+    <div class="modal-secao">
+      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 1 0 6 8c0 3.5-1 5-1 5h14s-1-1.5-1-5"/><path d="M10 17a2 2 0 0 0 4 0"/></svg>Dica da Lívia</h4>
+      <div class="dica-box">
+        <div class="foto-livia">
+          <img src="Docs/Perfil-Lívia.png" alt="Lívia Valença" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="avatar-fallback" style="display:none;"><span class="monograma">LV</span></div>
+        </div>
+        <div><p>"${r.dica}"</p><p class="assinatura">— Lívia Valença</p></div>
+      </div>
+    </div>
+    <div class="modal-secao" style="margin-bottom:0;">
+      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>Substituições</h4>
+      ${subHTML}
+    </div>
+  `;
+  document.getElementById('modalOverlay').classList.add('aberto');
+  document.body.style.overflow = 'hidden';
+}
+function fecharModal(){
+  document.getElementById('modalOverlay').classList.remove('aberto');
+  document.body.style.overflow = '';
+}
+document.getElementById('modalFechar').addEventListener('click', fecharModal);
+document.getElementById('modalOverlay').addEventListener('click', e=>{ if(e.target.id==='modalOverlay') fecharModal(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') fecharModal(); });
+
+/* ============================================================
+   PARTE 5 — NAV MOBILE
+   ============================================================ */
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', ()=>{
+  const aberto = hamburger.classList.toggle('aberto');
+  navLinks.classList.toggle('aberto');
+  hamburger.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+});
+navLinks.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=>{
+  hamburger.classList.remove('aberto'); navLinks.classList.remove('aberto');
+  hamburger.setAttribute('aria-expanded', 'false');
+}));
+
+/* ============================================================
+   PARTE 6 — SEÇÃO RECEITAS (grid + busca + tabs)
+   ============================================================ */
+let categoriaAtiva = 'todas';
+let buscaAtiva = '';
+function renderizarGridReceitas(){
+  const grid = document.getElementById('gridReceitas');
+  const filtradas = RECEITAS.filter(r=>{
+    const okCategoria = categoriaAtiva==='todas' || r.categoria===categoriaAtiva;
+    const okBusca = normalizar(r.nome).includes(normalizar(buscaAtiva));
+    return okCategoria && okBusca;
+  });
+  if(filtradas.length===0){
+    grid.innerHTML = `<div class="sem-resultado">Hmm, nenhuma receita encontrada. Que tal tentar outro termo?</div>`;
+    return;
+  }
+  grid.innerHTML = filtradas.map((r,i)=> cardReceitaHTML(r, i===0)).join('');
+}
+document.getElementById('tabsCategoria').addEventListener('click', e=>{
+  const btn = e.target.closest('.tab-categoria'); if(!btn) return;
+  document.querySelectorAll('#tabsCategoria .tab-categoria').forEach(b=>b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  categoriaAtiva = btn.dataset.valor;
+  renderizarGridReceitas();
+});
+document.getElementById('buscaReceita').addEventListener('input', e=>{
+  buscaAtiva = e.target.value;
+  renderizarGridReceitas();
+});
+renderizarGridReceitas();
+
+/* ============================================================
+   PARTE 7 — GLOSSÁRIO
+   ============================================================ */
+document.getElementById('gridGlossario').innerHTML = GLOSSARIO
+  .slice().sort((a,b)=> a.termo.localeCompare(b.termo,'pt-BR'))
+  .map(g=>`<div class="termo"><span class="letra">${g.termo.charAt(0).toUpperCase()}</span><h4>${g.termo}</h4><p>${g.texto}</p></div>`).join('');
+
+/* ============================================================
+   PARTE 8 — SISTEMA 1: BUSCADOR INTELIGENTE POR OBJETIVO
+   ============================================================ */
+const estadoSistema1 = { momento:'qualquer', calFaixa:'qualquer', vontade:'qualquer' };
+function ligarGrupoPill(idGrupo, chaveEstado){
+  document.getElementById(idGrupo).addEventListener('click', e=>{
+    const btn = e.target.closest('.pill'); if(!btn) return;
+    document.querySelectorAll(`#${idGrupo} .pill`).forEach(b=>b.classList.remove('ativo'));
+    btn.classList.add('ativo');
+    estadoSistema1[chaveEstado] = btn.dataset.valor;
+    renderizarSistema1();
+  });
+}
+ligarGrupoPill('filtroMomento','momento');
+ligarGrupoPill('filtroCalorias','calFaixa');
+ligarGrupoPill('filtroVontade','vontade');
+
+function renderizarSistema1(){
+  const alvo = document.getElementById('resultadoSistema1');
+  let lista = RECEITAS.slice();
+  if(estadoSistema1.momento!=='qualquer') lista = lista.filter(r=>r.categoria===estadoSistema1.momento);
+  if(estadoSistema1.vontade!=='qualquer') lista = lista.filter(r=>r.vontade===estadoSistema1.vontade);
+  if(estadoSistema1.calFaixa!=='qualquer'){
+    const [min,max] = estadoSistema1.calFaixa.split('-').map(Number);
+    lista = lista.filter(r=> r.macros.calorias>=min && r.macros.calorias<=max);
+  }
+  if(lista.length===0){
+    alvo.innerHTML = `<div class="msg-vazia" style="grid-column:1/-1;">Hmm, essa combinação tá difícil. Que tal relaxar um filtro?</div>`;
+    return;
+  }
+  alvo.innerHTML = lista.map(r=>`<div class="fade-in">${cardReceitaHTML(r)}</div>`).join('');
+}
+renderizarSistema1();
+
+/* ============================================================
+   PARTE 9 — SISTEMA 2: CALCULADORA DE SUBSTITUIÇÕES
+   ============================================================ */
+const datalistIngredientes = document.getElementById('listaIngredientes');
+datalistIngredientes.innerHTML = LISTA_INGREDIENTES.map(i=>`<option value="${i}"></option>`).join('');
+
+function buscarSubstituicao(termoBruto){
+  const alvo = document.getElementById('resultadoSistema2');
+  const termo = normalizar(termoBruto);
+  if(!termo){ alvo.innerHTML = ''; return; }
+
+  // procura chave exata, senão a melhor correspondência parcial no banco
+  let chaveEncontrada = Object.keys(BANCO_SUBSTITUICOES).find(k=> k===termo)
+    || Object.keys(BANCO_SUBSTITUICOES).find(k=> k.includes(termo) || termo.includes(k));
+
+  const usadas = receitasComIngrediente(termo);
+
+  if(!chaveEncontrada){
+    if(usadas.length===0){
+      alvo.innerHTML = `<div class="msg-vazia">Não encontrei esse ingrediente por aqui. Tenta um termo mais simples, tipo "frango" ou "iogurte".</div>`;
+      return;
+    }
+    alvo.innerHTML = `<div class="card-substituicao"><p class="impacto">Esse ingrediente aparece nas receitas abaixo, mas ainda não tenho uma substituição sugerida para ele.</p>
+      <p class="usado-em"><b>Aparece em:</b> ${usadas.map(r=>r.nome).join(', ')}</p></div>`;
+    return;
+  }
+
+  const dado = BANCO_SUBSTITUICOES[chaveEncontrada];
+  alvo.innerHTML = `<div class="card-substituicao">
+    <div class="linha-troca"><span class="de">${chaveEncontrada}</span><span class="seta">→</span><span class="para">${dado.substituto}</span></div>
+    <p class="impacto">${dado.impacto}</p>
+    ${usadas.length ? `<p class="usado-em"><b>Usado em:</b> ${usadas.map(r=>r.nome).join(', ')}</p>` : `<p class="usado-em">Substituição geral — vale para qualquer receita que leve esse ingrediente.</p>`}
+  </div>`;
+}
+const inputSub = document.getElementById('inputSubstituicao');
+inputSub.addEventListener('input', ()=> buscarSubstituicao(inputSub.value));
+inputSub.addEventListener('change', ()=> buscarSubstituicao(inputSub.value));
+
+/* ============================================================
+   PARTE 10 — SISTEMA 3: "O QUE TENHO NA GELADEIRA?"
+   ============================================================ */
+const VOCABULARIO_GELADEIRA = {
+  "Proteínas": ["Frango","Atum","Ovo","Carne moída","Tilápia","Cottage","Iogurte grego"],
+  "Carboidratos": ["Tapioca","Aveia","Batata-doce","Banana","Batata"],
+  "Laticínios": ["Queijo","Leite","Cream cheese","Iogurte natural"],
+  "Extras": ["Azeite","Temperos básicos","Alho","Cebola","Brócolis","Cenoura","Espinafre"]
+};
+const selecionadosGeladeira = new Set();
+
+function renderizarGridGeladeira(){
+  const alvo = document.getElementById('gridGeladeira');
+  alvo.innerHTML = Object.keys(VOCABULARIO_GELADEIRA).map(cat=>`
+    <div class="geladeira-categoria">
+      <h4>${cat}</h4>
+      <div class="geladeira-itens">
+        ${VOCABULARIO_GELADEIRA[cat].map(item=>`<button type="button" class="item-geladeira" data-item="${item}"><span class="check">✓</span>${item}</button>`).join('')}
+      </div>
+    </div>`).join('');
+
+  alvo.querySelectorAll('.item-geladeira').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const item = btn.dataset.item;
+      if(selecionadosGeladeira.has(item)){ selecionadosGeladeira.delete(item); btn.classList.remove('marcado'); }
+      else { selecionadosGeladeira.add(item); btn.classList.add('marcado'); }
+      renderizarSistema3();
+    });
+  });
+}
+renderizarGridGeladeira();
+
+function renderizarSistema3(){
+  const alvo = document.getElementById('resultadoSistema3');
+  if(selecionadosGeladeira.size===0){ alvo.innerHTML = ''; return; }
+
+  const facoAgora = [];
+  const faltaPouco = [];
+  RECEITAS.forEach(r=>{
+    if(r.geladeiraTags.length===0) return;
+    const presentes = r.geladeiraTags.filter(t=> selecionadosGeladeira.has(t));
+    const pct = presentes.length / r.geladeiraTags.length;
+    const faltantes = r.geladeiraTags.filter(t=> !selecionadosGeladeira.has(t));
+    if(pct>=0.8) facoAgora.push(r);
+    else if(faltantes.length>=1 && faltantes.length<=2 && presentes.length>0) faltaPouco.push({r, faltantes});
+  });
+
+  let html = '';
+  if(facoAgora.length){
+    html += `<h4>Você consegue fazer agora</h4><div class="resultado-grid fade-in">${facoAgora.map(r=>`
+      <div>${cardReceitaHTML(r)}<span class="badge-status badge-faco">Faço agora!</span></div>`).join('')}</div>`;
+  }
+  if(faltaPouco.length){
+    html += `<h4>Falta pouco</h4><div class="resultado-grid fade-in">${faltaPouco.map(({r,faltantes})=>`
+      <div>${cardReceitaHTML(r)}<span class="badge-status badge-falta">Falta só: ${faltantes.join(', ')}</span></div>`).join('')}</div>`;
+  }
+  if(!html){
+    html = `<div class="msg-vazia">Com o que você marcou ainda não fecha nenhuma receita. Marca mais alguns itens da geladeira!</div>`;
+  }
+  alvo.innerHTML = html;
+}
+
+/* ============================================================
+   PARTE 11 — SISTEMA 4: MONTADOR DE CARDÁPIO SEMANAL
+   ============================================================ */
+const DIAS_SEMANA = ['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'];
+const PERFIS_REFEICAO = {
+  3: [ {nome:'Café da Manhã', pct:.30, tipos:['cafe-lanches']}, {nome:'Almoço', pct:.40, tipos:['almoco-janta']}, {nome:'Jantar', pct:.30, tipos:['almoco-janta']} ],
+  4: [ {nome:'Café da Manhã', pct:.25, tipos:['cafe-lanches']}, {nome:'Almoço', pct:.35, tipos:['almoco-janta']}, {nome:'Lanche', pct:.15, tipos:['cafe-lanches','sobremesas']}, {nome:'Jantar', pct:.25, tipos:['almoco-janta']} ],
+  5: [ {nome:'Café da Manhã', pct:.20, tipos:['cafe-lanches']}, {nome:'Lanche da Manhã', pct:.10, tipos:['cafe-lanches','sobremesas']}, {nome:'Almoço', pct:.30, tipos:['almoco-janta']}, {nome:'Lanche da Tarde', pct:.15, tipos:['cafe-lanches','sobremesas']}, {nome:'Jantar', pct:.25, tipos:['almoco-janta']} ]
+};
+
+const estadoRestricoes = { nenhuma:true, semGluten:false, semLactose:false, semPeixe:false };
+document.getElementById('restricoes').addEventListener('click', e=>{
+  const btn = e.target.closest('.chip-restricao'); if(!btn) return;
+  const valor = btn.dataset.valor;
+  if(valor==='nenhuma'){
+    Object.keys(estadoRestricoes).forEach(k=> estadoRestricoes[k]=false);
+    estadoRestricoes.nenhuma = true;
+  } else {
+    estadoRestricoes.nenhuma = false;
+    estadoRestricoes[valor] = !estadoRestricoes[valor];
+    if(!estadoRestricoes.semGluten && !estadoRestricoes.semLactose && !estadoRestricoes.semPeixe) estadoRestricoes.nenhuma = true;
+  }
+  document.querySelectorAll('#restricoes .chip-restricao').forEach(b=>{
+    b.classList.toggle('ativo', estadoRestricoes[b.dataset.valor]);
+  });
+});
+
+let ultimoCardapioGerado = null;
+
+function escolherReceita(pool, targetCal, usados){
+  const restrito = pool.filter(r=>{
+    if(estadoRestricoes.semGluten && !r.semGluten) return false;
+    if(estadoRestricoes.semLactose && !r.semLactose) return false;
+    if(estadoRestricoes.semPeixe && !r.semPeixe) return false;
+    return true;
+  });
+  const base = restrito.length ? restrito : pool; // se a restrição zerar o pool, ignora a restrição como último recurso
+
+  const porCalorias = (lista, tolerancia) => lista.filter(r=> Math.abs(r.macros.calorias-targetCal) <= targetCal*tolerancia);
+
+  let candidatos = porCalorias(base.filter(r=>!usados.has(r.id)), .35);
+  if(!candidatos.length) candidatos = porCalorias(base.filter(r=>!usados.has(r.id)), .60);
+  if(!candidatos.length) candidatos = base.filter(r=>!usados.has(r.id));
+  if(!candidatos.length) candidatos = porCalorias(base, .60);
+  if(!candidatos.length) candidatos = base;
+  if(!candidatos.length) candidatos = pool;
+
+  return candidatos[Math.floor(Math.random()*candidatos.length)];
+}
+
+document.getElementById('btnGerarCardapio').addEventListener('click', ()=>{
+  const metaCalorica = Number(document.getElementById('metaCalorica').value) || 1800;
+  const nRefeicoes = Number(document.getElementById('refeicoesPorDia').value);
+  const perfil = PERFIS_REFEICAO[nRefeicoes];
+  const usados = new Set();
+
+  const cardapio = DIAS_SEMANA.map(dia=>{
+    const refeicoes = perfil.map(slot=>{
+      const pool = RECEITAS.filter(r=> slot.tipos.includes(r.categoria));
+      const targetCal = metaCalorica * slot.pct;
+      const receita = escolherReceita(pool, targetCal, usados);
+      if(receita) usados.add(receita.id);
+      return { slotNome:slot.nome, receita };
+    });
+    return { dia, refeicoes };
+  });
+
+  ultimoCardapioGerado = cardapio;
+  renderizarTabelaCardapio(cardapio, perfil);
+  document.getElementById('acoesCardapio').style.display = 'flex';
+  document.getElementById('listaComprasWrap').style.display = 'none';
+});
+
+function renderizarTabelaCardapio(cardapio, perfil){
+  const wrap = document.getElementById('wrapTabelaCardapio');
+  const tabela = document.getElementById('tabelaCardapio');
+  const cabecalho = `<thead><tr><th>Dia</th>${perfil.map(s=>`<th>${s.nome}</th>`).join('')}</tr></thead>`;
+  const corpo = cardapio.map(({dia,refeicoes})=>`
+    <tr><td><b>${dia}</b></td>
+    ${refeicoes.map(({receita})=> receita
+      ? `<td><span class="nome-receita">${receita.nome}</span><span class="cal-receita">${receita.macros.calorias} kcal</span></td>`
+      : `<td>—</td>`
+    ).join('')}
+    </tr>`).join('');
+  tabela.innerHTML = cabecalho + `<tbody>${corpo}</tbody>`;
+  wrap.style.display = 'block';
+}
+
+/* ============================================================
+   PARTE 12 — SISTEMA 5: LISTA DE COMPRAS AUTOMÁTICA
+   ============================================================ */
+document.getElementById('btnGerarLista').addEventListener('click', ()=>{
+  if(!ultimoCardapioGerado) return;
+  const receitasUsadas = [];
+  ultimoCardapioGerado.forEach(({refeicoes})=> refeicoes.forEach(({receita})=>{
+    if(receita) receitasUsadas.push(receita);
+  }));
+
+  const categorias = {};
+  receitasUsadas.forEach(r=>{
+    r.ingredientes.forEach(ing=>{
+      const cat = paraCategoriaCompras(ing);
+      if(!categorias[cat]) categorias[cat] = new Set();
+      categorias[cat].add(ing.charAt(0).toUpperCase()+ing.slice(1));
+    });
+  });
+
+  const ordem = ['Proteínas','Vegetais e Frutas','Laticínios','Carboidratos e Grãos','Temperos e Extras'];
+  let html = '';
+  ordem.forEach(cat=>{
+    if(categorias[cat] && categorias[cat].size){
+      html += `<h4>${cat}</h4><ul>${[...categorias[cat]].sort().map(i=>`<li>${i}</li>`).join('')}</ul>`;
+    }
+  });
+
+  document.getElementById('listaComprasConteudo').innerHTML = html;
+  document.getElementById('listaComprasWrap').style.display = 'block';
+  document.getElementById('listaComprasWrap').scrollIntoView({behavior:'smooth', block:'center'});
+
+  window._textoListaCompras = ordem
+    .filter(cat=> categorias[cat] && categorias[cat].size)
+    .map(cat=> `${cat}\n` + [...categorias[cat]].sort().map(i=>`- ${i}`).join('\n'))
+    .join('\n\n');
+});
+
+document.getElementById('btnCopiarLista').addEventListener('click', ()=>{
+  const texto = window._textoListaCompras || '';
+  const btn = document.getElementById('btnCopiarLista');
+  const restaurar = ()=>{ btn.textContent = 'Copiar Lista'; };
+  const marcarSucesso = ()=>{ btn.textContent = 'Copiado ✓'; setTimeout(restaurar, 2000); };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(texto).then(marcarSucesso).catch(()=>{
+      const ta=document.createElement('textarea'); ta.value=texto; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta); marcarSucesso();
+    });
+  } else {
+    const ta=document.createElement('textarea'); ta.value=texto; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta); marcarSucesso();
+  }
+});
+
+document.querySelector('.scroll-hint')?.addEventListener('click', () => {
+  document.querySelector('#sobre')?.scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
